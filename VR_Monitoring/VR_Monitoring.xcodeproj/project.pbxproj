@@ -32,6 +32,7 @@
 		7BD291FD1BEE602F006BB075 /* ParseTwitterUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD291F61BEE602F006BB075 /* ParseTwitterUtils.framework */; };
 		7BD291FE1BEE602F006BB075 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD291F71BEE602F006BB075 /* ParseUI.framework */; };
 		7BD292011BEE6063006BB075 /* Parse-VR.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD292001BEE6063006BB075 /* Parse-VR.m */; };
+		7BD292031BF92243006BB075 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD292021BF92243006BB075 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		7BD291F71BEE602F006BB075 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "../../../../Downloads/parse-library-1.9.1/ParseUI.framework"; sourceTree = "<group>"; };
 		7BD291FF1BEE6062006BB075 /* VR_Monitoring-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VR_Monitoring-Bridging-Header.h"; sourceTree = "<group>"; };
 		7BD292001BEE6063006BB075 /* Parse-VR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Parse-VR.m"; sourceTree = "<group>"; };
+		7BD292021BF92243006BB075 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 			children = (
 				7BD291BB1BEE5F0F006BB075 /* AppDelegate.swift */,
 				7BD291BD1BEE5F0F006BB075 /* ViewController.swift */,
+				7BD292021BF92243006BB075 /* LoginViewController.swift */,
 				7BD291BF1BEE5F0F006BB075 /* Main.storyboard */,
 				7BD291C21BEE5F0F006BB075 /* Images.xcassets */,
 				7BD291C41BEE5F0F006BB075 /* LaunchScreen.xib */,
@@ -289,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BD292031BF92243006BB075 /* LoginViewController.swift in Sources */,
 				7BD291BE1BEE5F0F006BB075 /* ViewController.swift in Sources */,
 				7BD292011BEE6063006BB075 /* Parse-VR.m in Sources */,
 				7BD291BC1BEE5F0F006BB075 /* AppDelegate.swift in Sources */,
@@ -502,6 +506,7 @@
 				7BD291D71BEE5F0F006BB075 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7BD291D81BEE5F0F006BB075 /* Build configuration list for PBXNativeTarget "VR_MonitoringTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +515,7 @@
 				7BD291DA1BEE5F0F006BB075 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
