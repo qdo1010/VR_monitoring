@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class timerViewController: UIViewController {
 
@@ -32,6 +33,10 @@ class timerViewController: UIViewController {
                 startTime = NSDate.timeIntervalSinceReferenceDate()
             } else {
                 timer.invalidate()
+                var currentTime = timeLabel.text
+                var rushRiver = PFObject(className: "rushRiver")
+                rushRiver.setObject(currentTime!, forKey: "time")
+                rushRiver.saveInBackground()
                 startButton.setTitle("Start", forState: .Normal)
             }
         }
