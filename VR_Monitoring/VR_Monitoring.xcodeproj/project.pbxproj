@@ -12,6 +12,9 @@
 		7B5447B61C191991008603D4 /* exercisesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5447B51C191991008603D4 /* exercisesTableView.swift */; };
 		7B5447B81C1919AD008603D4 /* exerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5447B71C1919AD008603D4 /* exerciseTableViewCell.swift */; };
 		7B5447BA1C192F07008603D4 /* timerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5447B91C192F07008603D4 /* timerViewController.swift */; };
+		7B602F0B1C4ADB5F003D3E52 /* BTDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B602F0A1C4ADB5F003D3E52 /* BTDiscovery.swift */; };
+		7B602F0D1C4ADB6E003D3E52 /* BTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B602F0C1C4ADB6E003D3E52 /* BTService.swift */; };
+		7B602F0F1C4ADBCC003D3E52 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B602F0E1C4ADBCC003D3E52 /* CoreBluetooth.framework */; };
 		7BD291BC1BEE5F0F006BB075 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD291BB1BEE5F0F006BB075 /* AppDelegate.swift */; };
 		7BD291BE1BEE5F0F006BB075 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD291BD1BEE5F0F006BB075 /* ViewController.swift */; };
 		7BD291C11BEE5F0F006BB075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BD291BF1BEE5F0F006BB075 /* Main.storyboard */; };
@@ -56,6 +59,9 @@
 		7B5447B51C191991008603D4 /* exercisesTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exercisesTableView.swift; sourceTree = "<group>"; };
 		7B5447B71C1919AD008603D4 /* exerciseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exerciseTableViewCell.swift; sourceTree = "<group>"; };
 		7B5447B91C192F07008603D4 /* timerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = timerViewController.swift; sourceTree = "<group>"; };
+		7B602F0A1C4ADB5F003D3E52 /* BTDiscovery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTDiscovery.swift; sourceTree = "<group>"; };
+		7B602F0C1C4ADB6E003D3E52 /* BTService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTService.swift; sourceTree = "<group>"; };
+		7B602F0E1C4ADBCC003D3E52 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		7BD291B61BEE5F0F006BB075 /* VR_Monitoring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VR_Monitoring.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD291BA1BEE5F0F006BB075 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BD291BB1BEE5F0F006BB075 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B602F0F1C4ADBCC003D3E52 /* CoreBluetooth.framework in Frameworks */,
 				7BD291F01BEE601F006BB075 /* libsqlite3.dylib in Frameworks */,
 				7BD291EE1BEE600E006BB075 /* SystemConfiguration.framework in Frameworks */,
 				7BD291EC1BEE6001006BB075 /* StoreKit.framework in Frameworks */,
@@ -125,9 +132,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B602F091C4ADB4A003D3E52 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7B602F0A1C4ADB5F003D3E52 /* BTDiscovery.swift */,
+				7B602F0C1C4ADB6E003D3E52 /* BTService.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		7BD291AD1BEE5F0F006BB075 = {
 			isa = PBXGroup;
 			children = (
+				7B602F0E1C4ADBCC003D3E52 /* CoreBluetooth.framework */,
 				7BD292001BEE6063006BB075 /* Parse-VR.m */,
 				7BD291F11BEE602F006BB075 /* Bolts.framework */,
 				7BD291F21BEE602F006BB075 /* Parse.framework */,
@@ -166,6 +183,7 @@
 		7BD291B81BEE5F0F006BB075 /* VR_Monitoring */ = {
 			isa = PBXGroup;
 			children = (
+				7B602F091C4ADB4A003D3E52 /* Classes */,
 				7BD291BB1BEE5F0F006BB075 /* AppDelegate.swift */,
 				7BD291BD1BEE5F0F006BB075 /* ViewController.swift */,
 				7BD292021BF92243006BB075 /* LoginViewController.swift */,
@@ -311,8 +329,10 @@
 				7BD292031BF92243006BB075 /* LoginViewController.swift in Sources */,
 				7B5447B81C1919AD008603D4 /* exerciseTableViewCell.swift in Sources */,
 				7BD291BE1BEE5F0F006BB075 /* ViewController.swift in Sources */,
+				7B602F0D1C4ADB6E003D3E52 /* BTService.swift in Sources */,
 				7BD292011BEE6063006BB075 /* Parse-VR.m in Sources */,
 				7B5447B21C190DE2008603D4 /* passwordSavedViewController.swift in Sources */,
+				7B602F0B1C4ADB5F003D3E52 /* BTDiscovery.swift in Sources */,
 				7B5447B61C191991008603D4 /* exercisesTableView.swift in Sources */,
 				7B5447B41C191940008603D4 /* exercisesViewController.swift in Sources */,
 				7BD291BC1BEE5F0F006BB075 /* AppDelegate.swift in Sources */,
