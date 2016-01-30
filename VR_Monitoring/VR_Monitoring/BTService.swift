@@ -63,7 +63,7 @@ class BTService: NSObject, CBPeripheralDelegate {
         
         for service in peripheral.services! {
             if service.UUID == BLEServiceUUID {
-                peripheral.discoverCharacteristics(uuidsForBTService, forService: service as! CBService)
+                peripheral.discoverCharacteristics(uuidsForBTService, forService: service )
             }
         }
     }
@@ -82,7 +82,7 @@ class BTService: NSObject, CBPeripheralDelegate {
             for characteristic in characteristics {
                 if characteristic.UUID == PositionCharUUID {
                     self.positionCharacteristic = (characteristic) as? CBCharacteristic
-                    peripheral.setNotifyValue(true, forCharacteristic: characteristic as! CBCharacteristic)
+                    peripheral.setNotifyValue(true, forCharacteristic: characteristic )
                     
                     // Send notification that Bluetooth is connected and all required characteristics are discovered
                     self.sendBTServiceNotificationWithIsBluetoothConnected(true)

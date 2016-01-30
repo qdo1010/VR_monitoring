@@ -269,6 +269,8 @@
 		7BD291AE1BEE5F0F006BB075 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "NU Enabling Engineering";
 				TargetAttributes = {
