@@ -21,7 +21,7 @@ class passwordSavedViewController: UIViewController {
             dispatch_after(time, dispatch_get_main_queue(), block)
         }
         runAfterDelay(1) {
-            self.performSegueWithIdentifier("toMainScreen", sender: self)
+            self.performSegueWithIdentifier("toBTSearch", sender: self)
         }
         
     }

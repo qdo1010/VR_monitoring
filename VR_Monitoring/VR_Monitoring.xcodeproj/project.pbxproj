@@ -15,6 +15,7 @@
 		7B602F0B1C4ADB5F003D3E52 /* BTDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B602F0A1C4ADB5F003D3E52 /* BTDiscovery.swift */; };
 		7B602F0D1C4ADB6E003D3E52 /* BTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B602F0C1C4ADB6E003D3E52 /* BTService.swift */; };
 		7B602F0F1C4ADBCC003D3E52 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B602F0E1C4ADBCC003D3E52 /* CoreBluetooth.framework */; };
+		7B602F111C4ADE83003D3E52 /* BTSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B602F101C4ADE83003D3E52 /* BTSearchViewController.swift */; };
 		7BD291BC1BEE5F0F006BB075 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD291BB1BEE5F0F006BB075 /* AppDelegate.swift */; };
 		7BD291BE1BEE5F0F006BB075 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD291BD1BEE5F0F006BB075 /* ViewController.swift */; };
 		7BD291C11BEE5F0F006BB075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BD291BF1BEE5F0F006BB075 /* Main.storyboard */; };
@@ -62,6 +63,7 @@
 		7B602F0A1C4ADB5F003D3E52 /* BTDiscovery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTDiscovery.swift; sourceTree = "<group>"; };
 		7B602F0C1C4ADB6E003D3E52 /* BTService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTService.swift; sourceTree = "<group>"; };
 		7B602F0E1C4ADBCC003D3E52 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		7B602F101C4ADE83003D3E52 /* BTSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTSearchViewController.swift; sourceTree = "<group>"; };
 		7BD291B61BEE5F0F006BB075 /* VR_Monitoring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VR_Monitoring.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD291BA1BEE5F0F006BB075 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BD291BB1BEE5F0F006BB075 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				7BD291BB1BEE5F0F006BB075 /* AppDelegate.swift */,
 				7BD291BD1BEE5F0F006BB075 /* ViewController.swift */,
 				7BD292021BF92243006BB075 /* LoginViewController.swift */,
+				7B602F101C4ADE83003D3E52 /* BTSearchViewController.swift */,
 				7B5447B11C190DE2008603D4 /* passwordSavedViewController.swift */,
 				7BD291BF1BEE5F0F006BB075 /* Main.storyboard */,
 				7B5447B91C192F07008603D4 /* timerViewController.swift */,
@@ -327,6 +330,7 @@
 			files = (
 				7B5447BA1C192F07008603D4 /* timerViewController.swift in Sources */,
 				7BD292031BF92243006BB075 /* LoginViewController.swift in Sources */,
+				7B602F111C4ADE83003D3E52 /* BTSearchViewController.swift in Sources */,
 				7B5447B81C1919AD008603D4 /* exerciseTableViewCell.swift in Sources */,
 				7BD291BE1BEE5F0F006BB075 /* ViewController.swift in Sources */,
 				7B602F0D1C4ADB6E003D3E52 /* BTService.swift in Sources */,
