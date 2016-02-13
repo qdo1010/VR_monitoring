@@ -7,9 +7,11 @@
 //
 
 import UIKit
-import Parse
+import Firebase
 
 class LoginViewController: UIViewController {
+    
+    let ref = Firebase(url: "https://amber-inferno-7571.firebaseio.com/")
     
     @IBOutlet weak var usernameTextField: UITextField!
     
@@ -19,28 +21,24 @@ class LoginViewController: UIViewController {
     @IBAction func login(sender: UIButton) {
         let userEmail = usernameTextField.text
         let userPassword = passwordTextField.text
-        
-        if !userEmail.isEmpty && !userPassword.isEmpty {
-            PFUser.logInWithUsernameInBackground(userEmail, password: userPassword) { (user, error) -> Void in
-                if error == nil {
-                    println("login successful");
-                    NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isUserLoggedIn");
-                    NSUserDefaults.standardUserDefaults().synchronize();
-                    self.performSegueWithIdentifier("loginSuccessful", sender: self);
+        ref.authUser(userEmail, password: userPassword,
+            withCompletionBlock: { error, authData in
+                if error != nil {
+                    // There was an error logging in to this account
+                    println("error logging in");
                 } else {
-                    println("error: \(error!.userInfo!)")
+                    // We are now logged in
+                    println("log in success!")
+                    
+                    //have to regenerate and set new password everytime
+                    self.performSegueWithIdentifier("loginSuccessful", sender: self);
                 }
-            }
-        }
+        })
+
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let testObject = PFObject(className: "TestObject")
-        testObject.setObject("bar", forKey: "foo")
-        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
-            println("Object has been saved.")
-        }
         
     }
     

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Parse
 
 class timerViewController: UIViewController {
 
@@ -20,7 +19,7 @@ class timerViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
-    
+   /*
     @IBAction func startButton(sender: UIButton) {
         launchBool = !launchBool
     }
@@ -40,7 +39,7 @@ class timerViewController: UIViewController {
                 startButton.setTitle("Start", forState: .Normal)
             }
         }
-    }
+    } */
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

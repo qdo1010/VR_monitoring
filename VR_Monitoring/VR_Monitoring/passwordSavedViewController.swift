@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Parse
+import Firebase
 
 class passwordSavedViewController: UIViewController {
     
@@ -21,8 +21,9 @@ class passwordSavedViewController: UIViewController {
             dispatch_after(time, dispatch_get_main_queue(), block)
         }
         runAfterDelay(1) {
-            self.performSegueWithIdentifier("toBTSearch", sender: self)
+            self.performSegueWithIdentifier("toMainScreen", sender: self)
         }
+
         
     }
     
