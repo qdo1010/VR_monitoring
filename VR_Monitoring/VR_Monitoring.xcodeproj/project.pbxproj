@@ -34,7 +34,6 @@
 		7BD291EC1BEE6001006BB075 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD291EB1BEE6001006BB075 /* StoreKit.framework */; };
 		7BD291EE1BEE600E006BB075 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD291ED1BEE600E006BB075 /* SystemConfiguration.framework */; };
 		7BD291F01BEE601F006BB075 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD291EF1BEE601F006BB075 /* libsqlite3.dylib */; };
-		7BD291F81BEE602F006BB075 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD291F11BEE602F006BB075 /* Bolts.framework */; };
 		7BD292011BEE6063006BB075 /* Parse-VR.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD292001BEE6063006BB075 /* Parse-VR.m */; };
 		7BD292031BF92243006BB075 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD292021BF92243006BB075 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
@@ -83,7 +82,6 @@
 		7BD291EB1BEE6001006BB075 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		7BD291ED1BEE600E006BB075 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7BD291EF1BEE601F006BB075 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		7BD291F11BEE602F006BB075 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../../Downloads/parse-library-1.9.1/Bolts.framework"; sourceTree = "<group>"; };
 		7BD291FF1BEE6062006BB075 /* VR_Monitoring-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VR_Monitoring-Bridging-Header.h"; sourceTree = "<group>"; };
 		7BD292001BEE6063006BB075 /* Parse-VR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Parse-VR.m"; sourceTree = "<group>"; };
 		7BD292021BF92243006BB075 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 				7BD291E81BEE5FCA006BB075 /* QuartzCore.framework in Frameworks */,
 				7BD291E61BEE5FC2006BB075 /* MobileCoreServices.framework in Frameworks */,
 				7BD291E41BEE5FBB006BB075 /* libz.dylib in Frameworks */,
-				7BD291F81BEE602F006BB075 /* Bolts.framework in Frameworks */,
 				7BD291E21BEE5FB2006BB075 /* CoreLocation.framework in Frameworks */,
 				7BD291E01BEE5FAD006BB075 /* CoreGraphics.framework in Frameworks */,
 				7BD291DE1BEE5FA6006BB075 /* CFNetwork.framework in Frameworks */,
@@ -152,7 +149,6 @@
 			children = (
 				7B602F0E1C4ADBCC003D3E52 /* CoreBluetooth.framework */,
 				7BD292001BEE6063006BB075 /* Parse-VR.m */,
-				7BD291F11BEE602F006BB075 /* Bolts.framework */,
 				7BD291EF1BEE601F006BB075 /* libsqlite3.dylib */,
 				7BD291ED1BEE600E006BB075 /* SystemConfiguration.framework */,
 				7BD291EB1BEE6001006BB075 /* StoreKit.framework */,

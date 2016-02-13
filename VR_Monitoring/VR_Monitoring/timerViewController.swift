@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class timerViewController: UIViewController {
 
@@ -19,7 +20,7 @@ class timerViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
-   /*
+
     @IBAction func startButton(sender: UIButton) {
         launchBool = !launchBool
     }
@@ -32,14 +33,18 @@ class timerViewController: UIViewController {
                 startTime = NSDate.timeIntervalSinceReferenceDate()
             } else {
                 timer.invalidate()
-                var currentTime = timeLabel.text
-                var rushRiver = PFObject(className: "rushRiver")
-                rushRiver.setObject(currentTime!, forKey: "time")
-                rushRiver.saveInBackground()
+                var currentTime = timeLabel.text!
+                var ref = Firebase(url: "https://amber-inferno-7571.firebaseio.com/")
+                var husky = ["user_name": "Husky", "time": currentTime]
+                
+                var usersRef = ref.childByAppendingPath("users")
+                
+                var users = ["husky": husky]
+                usersRef.setValue(users)
                 startButton.setTitle("Start", forState: .Normal)
             }
         }
-    } */
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
