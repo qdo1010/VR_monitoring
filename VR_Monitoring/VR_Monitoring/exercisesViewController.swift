@@ -10,6 +10,7 @@ import UIKit
 
 class exercisesViewController: UITableViewController {
 
+    var userName = String()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,10 +38,19 @@ class exercisesViewController: UITableViewController {
         // Fetches the appropriate meal for the data source layout.
         cell.exerciseTitle!.text = exerciseList[indexPath.row]
         
+        
         return cell
     }
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.performSegueWithIdentifier("toExerciseTimer", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var TimerViewController: timerViewController = segue.destinationViewController as! timerViewController
+        TimerViewController.userName = userName
+        let indexPath = tableView.indexPathForSelectedRow()
+        TimerViewController.exerciseTitle = exerciseList[indexPath!.row]
+        
     }
     
     /*

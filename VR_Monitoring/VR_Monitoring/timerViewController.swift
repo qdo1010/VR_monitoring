@@ -11,12 +11,17 @@ import Firebase
 
 class timerViewController: UIViewController {
 
+    var userName = String()
+    var exerciseTitle = String()
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var startButton: UIButton!
     var running = false;
     
+    @IBOutlet weak var exerciseTitleLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        exerciseTitleLabel.text = exerciseTitle
         
         // Do any additional setup after loading the view.
     }

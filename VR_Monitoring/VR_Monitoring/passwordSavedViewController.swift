@@ -11,6 +11,8 @@ import Firebase
 
 class passwordSavedViewController: UIViewController {
     
+    var userName = String()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -31,7 +33,13 @@ class passwordSavedViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        /*let tabBarController = segue.destinationViewController as! UITabBarController
+        var ExerViewController: exercisesViewController = tabBarController.viewControllers![0] as! exercisesViewController
+        ExerViewController.userName = userName*/
+        
+    }
     
 }
 

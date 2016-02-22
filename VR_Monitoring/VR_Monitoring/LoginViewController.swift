@@ -48,5 +48,11 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var SavedViewController: passwordSavedViewController = segue.destinationViewController as! passwordSavedViewController
+        SavedViewController.userName = usernameTextField.text
+        
+    }
+    
     
 }
