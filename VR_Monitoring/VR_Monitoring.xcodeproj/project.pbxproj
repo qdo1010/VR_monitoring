@@ -39,6 +39,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7B2C5C691C80FDAC00143D29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B2C5C631C80FDAC00143D29 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		7B2C5C6B1C80FDAC00143D29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B2C5C631C80FDAC00143D29 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
 		7BD291CC1BEE5F0F006BB075 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7BD291AE1BEE5F0F006BB075 /* Project object */;
@@ -52,6 +66,7 @@
 		0847791B12BCD63F5CB1ABB3 /* Pods_VR_Monitoring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VR_Monitoring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		091E96F26D5B009629D2B64A /* Pods-VR_Monitoring.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VR_Monitoring.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VR_Monitoring/Pods-VR_Monitoring.debug.xcconfig"; sourceTree = "<group>"; };
 		4B901D69C8EFDC59B6932D08 /* Pods-VR_Monitoring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VR_Monitoring.release.xcconfig"; path = "Pods/Target Support Files/Pods-VR_Monitoring/Pods-VR_Monitoring.release.xcconfig"; sourceTree = "<group>"; };
+		7B2C5C631C80FDAC00143D29 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ../ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
 		7B5447B11C190DE2008603D4 /* passwordSavedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = passwordSavedViewController.swift; sourceTree = "<group>"; };
 		7B5447B31C191940008603D4 /* exercisesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exercisesViewController.swift; sourceTree = "<group>"; };
 		7B5447B51C191991008603D4 /* exercisesTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exercisesTableView.swift; sourceTree = "<group>"; };
@@ -135,6 +150,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		7B2C5C641C80FDAC00143D29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B2C5C6A1C80FDAC00143D29 /* ResearchKit.framework */,
+				7B2C5C6C1C80FDAC00143D29 /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		7B602F091C4ADB4A003D3E52 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +171,7 @@
 		7BD291AD1BEE5F0F006BB075 = {
 			isa = PBXGroup;
 			children = (
+				7B2C5C631C80FDAC00143D29 /* ResearchKit.xcodeproj */,
 				7B602F0E1C4ADBCC003D3E52 /* CoreBluetooth.framework */,
 				7BD292001BEE6063006BB075 /* Parse-VR.m */,
 				7BD291EF1BEE601F006BB075 /* libsqlite3.dylib */,
@@ -294,6 +319,12 @@
 			mainGroup = 7BD291AD1BEE5F0F006BB075;
 			productRefGroup = 7BD291B71BEE5F0F006BB075 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7B2C5C641C80FDAC00143D29 /* Products */;
+					ProjectRef = 7B2C5C631C80FDAC00143D29 /* ResearchKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				7BD291B51BEE5F0F006BB075 /* VR_Monitoring */,
@@ -301,6 +332,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7B2C5C6A1C80FDAC00143D29 /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = 7B2C5C691C80FDAC00143D29 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7B2C5C6C1C80FDAC00143D29 /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = 7B2C5C6B1C80FDAC00143D29 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7BD291B41BEE5F0F006BB075 /* Resources */ = {

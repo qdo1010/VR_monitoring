@@ -150,6 +150,46 @@
             </objects>
             <point key="canvasLocation" x="3400" y="-106"/>
         </scene>
+        <!--Progress-->
+        <scene sceneID="zFb-si-bN5">
+            <objects>
+                <viewController id="mxs-fI-7ir" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="r9f-GX-E8K"/>
+                        <viewControllerLayoutGuide type="bottom" id="eRe-rc-qZ2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dhg-Pc-yko">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Progress" id="0iL-RU-yqf"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nC8-nA-NOM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1588" y="1044"/>
+        </scene>
+        <!--Messages-->
+        <scene sceneID="ouX-ve-EcB">
+            <objects>
+                <viewController id="mQr-vh-cNj" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u18-nR-ENq"/>
+                        <viewControllerLayoutGuide type="bottom" id="5ML-Fm-cE6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yKu-6t-JPb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Messages" id="zBN-Ow-du9"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ab1-Ta-OBy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2447" y="647"/>
+        </scene>
         <!--Timer View Controller-->
         <scene sceneID="tfv-KB-QZC">
             <objects>
@@ -210,17 +250,19 @@
                     </tabBar>
                     <connections>
                         <segue destination="Vq6-6y-O3A" kind="relationship" relationship="viewControllers" id="btF-Xo-KGx"/>
+                        <segue destination="mxs-fI-7ir" kind="relationship" relationship="viewControllers" id="d9b-B4-lSD"/>
+                        <segue destination="mQr-vh-cNj" kind="relationship" relationship="viewControllers" id="x2M-mR-2I9"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VxN-aQ-CoI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1599" y="216"/>
         </scene>
-        <!--Item-->
+        <!--Exercises-->
         <scene sceneID="HU6-Lk-0r2">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vq6-6y-O3A" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="T2z-0u-FKe"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vq6-6y-O3A" userLabel="Exercises" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Exercises" id="T2z-0u-FKe" userLabel="Exercises"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VF2-W0-l5E">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

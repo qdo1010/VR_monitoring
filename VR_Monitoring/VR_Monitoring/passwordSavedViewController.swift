@@ -37,7 +37,11 @@ class passwordSavedViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         /*let tabBarController = segue.destinationViewController as! UITabBarController
         var ExerViewController: exercisesViewController = tabBarController.viewControllers![0] as! exercisesViewController
-        ExerViewController.userName = userName*/
+        ExerViewController.userName = userName
+        let tabBarController = segue.destinationViewController as! UITabBarController
+        let barViewControllers = self.tabBarController?.viewControllers
+        let exer = barViewControllers![0] as! exercisesViewController
+        exer.userName = userName*/
         
     }
     
