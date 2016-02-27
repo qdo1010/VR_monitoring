@@ -13,10 +13,7 @@
 		7B5447B61C191991008603D4 /* exercisesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5447B51C191991008603D4 /* exercisesTableView.swift */; };
 		7B5447B81C1919AD008603D4 /* exerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5447B71C1919AD008603D4 /* exerciseTableViewCell.swift */; };
 		7B5447BA1C192F07008603D4 /* timerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5447B91C192F07008603D4 /* timerViewController.swift */; };
-		7B602F0B1C4ADB5F003D3E52 /* BTDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B602F0A1C4ADB5F003D3E52 /* BTDiscovery.swift */; };
-		7B602F0D1C4ADB6E003D3E52 /* BTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B602F0C1C4ADB6E003D3E52 /* BTService.swift */; };
 		7B602F0F1C4ADBCC003D3E52 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B602F0E1C4ADBCC003D3E52 /* CoreBluetooth.framework */; };
-		7B602F111C4ADE83003D3E52 /* BTSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B602F101C4ADE83003D3E52 /* BTSearchViewController.swift */; };
 		7BD291BC1BEE5F0F006BB075 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD291BB1BEE5F0F006BB075 /* AppDelegate.swift */; };
 		7BD291BE1BEE5F0F006BB075 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD291BD1BEE5F0F006BB075 /* ViewController.swift */; };
 		7BD291C11BEE5F0F006BB075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BD291BF1BEE5F0F006BB075 /* Main.storyboard */; };
@@ -36,6 +33,9 @@
 		7BD291F01BEE601F006BB075 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD291EF1BEE601F006BB075 /* libsqlite3.dylib */; };
 		7BD292011BEE6063006BB075 /* Parse-VR.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD292001BEE6063006BB075 /* Parse-VR.m */; };
 		7BD292031BF92243006BB075 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD292021BF92243006BB075 /* LoginViewController.swift */; };
+		7BE73A1B1C8226CB00F7A80C /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2C5C6A1C80FDAC00143D29 /* ResearchKit.framework */; };
+		7BE73A1C1C8226CB00F7A80C /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2C5C6A1C80FDAC00143D29 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7BE73A211C8227AA00F7A80C /* SurveyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE73A201C8227AA00F7A80C /* SurveyTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +60,28 @@
 			remoteGlobalIDString = 7BD291B51BEE5F0F006BB075;
 			remoteInfo = VR_Monitoring;
 		};
+		7BE73A1D1C8226CB00F7A80C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B2C5C631C80FDAC00143D29 /* ResearchKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B183A4731A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7BE73A1F1C8226CB00F7A80C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7BE73A1C1C8226CB00F7A80C /* ResearchKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0847791B12BCD63F5CB1ABB3 /* Pods_VR_Monitoring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VR_Monitoring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,10 +93,7 @@
 		7B5447B51C191991008603D4 /* exercisesTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exercisesTableView.swift; sourceTree = "<group>"; };
 		7B5447B71C1919AD008603D4 /* exerciseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exerciseTableViewCell.swift; sourceTree = "<group>"; };
 		7B5447B91C192F07008603D4 /* timerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = timerViewController.swift; sourceTree = "<group>"; };
-		7B602F0A1C4ADB5F003D3E52 /* BTDiscovery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTDiscovery.swift; sourceTree = "<group>"; };
-		7B602F0C1C4ADB6E003D3E52 /* BTService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTService.swift; sourceTree = "<group>"; };
 		7B602F0E1C4ADBCC003D3E52 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
-		7B602F101C4ADE83003D3E52 /* BTSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTSearchViewController.swift; sourceTree = "<group>"; };
 		7BD291B61BEE5F0F006BB075 /* VR_Monitoring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VR_Monitoring.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD291BA1BEE5F0F006BB075 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BD291BB1BEE5F0F006BB075 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +118,7 @@
 		7BD291FF1BEE6062006BB075 /* VR_Monitoring-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VR_Monitoring-Bridging-Header.h"; sourceTree = "<group>"; };
 		7BD292001BEE6063006BB075 /* Parse-VR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Parse-VR.m"; sourceTree = "<group>"; };
 		7BD292021BF92243006BB075 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7BE73A201C8227AA00F7A80C /* SurveyTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +138,7 @@
 				7BD291E01BEE5FAD006BB075 /* CoreGraphics.framework in Frameworks */,
 				7BD291DE1BEE5FA6006BB075 /* CFNetwork.framework in Frameworks */,
 				7BD291DC1BEE5F4F006BB075 /* AudioToolbox.framework in Frameworks */,
+				7BE73A1B1C8226CB00F7A80C /* ResearchKit.framework in Frameworks */,
 				10AC00DE8E3F9AE8E47F6AA8 /* Pods_VR_Monitoring.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,15 +179,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7B602F091C4ADB4A003D3E52 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				7B602F0A1C4ADB5F003D3E52 /* BTDiscovery.swift */,
-				7B602F0C1C4ADB6E003D3E52 /* BTService.swift */,
-			);
-			name = Classes;
-			sourceTree = "<group>";
-		};
 		7BD291AD1BEE5F0F006BB075 = {
 			isa = PBXGroup;
 			children = (
@@ -206,11 +217,9 @@
 		7BD291B81BEE5F0F006BB075 /* VR_Monitoring */ = {
 			isa = PBXGroup;
 			children = (
-				7B602F091C4ADB4A003D3E52 /* Classes */,
 				7BD291BB1BEE5F0F006BB075 /* AppDelegate.swift */,
 				7BD291BD1BEE5F0F006BB075 /* ViewController.swift */,
 				7BD292021BF92243006BB075 /* LoginViewController.swift */,
-				7B602F101C4ADE83003D3E52 /* BTSearchViewController.swift */,
 				7B5447B11C190DE2008603D4 /* passwordSavedViewController.swift */,
 				7BD291BF1BEE5F0F006BB075 /* Main.storyboard */,
 				7B5447B91C192F07008603D4 /* timerViewController.swift */,
@@ -220,6 +229,7 @@
 				7BD291C21BEE5F0F006BB075 /* Images.xcassets */,
 				7BD291C41BEE5F0F006BB075 /* LaunchScreen.xib */,
 				7BD291B91BEE5F0F006BB075 /* Supporting Files */,
+				7BE73A201C8227AA00F7A80C /* SurveyTask.swift */,
 			);
 			path = VR_Monitoring;
 			sourceTree = "<group>";
@@ -262,10 +272,12 @@
 				7BD291B41BEE5F0F006BB075 /* Resources */,
 				52961329B577A16E893D61A0 /* Embed Pods Frameworks */,
 				B0878AC959D5F226B161A150 /* Copy Pods Resources */,
+				7BE73A1F1C8226CB00F7A80C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7BE73A1E1C8226CB00F7A80C /* PBXTargetDependency */,
 			);
 			name = VR_Monitoring;
 			productName = VR_Monitoring;
@@ -301,6 +313,7 @@
 				TargetAttributes = {
 					7BD291B51BEE5F0F006BB075 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 6DQ27LZX5A;
 					};
 					7BD291CA1BEE5F0F006BB075 = {
 						CreatedOnToolsVersion = 6.4;
@@ -425,13 +438,11 @@
 			files = (
 				7B5447BA1C192F07008603D4 /* timerViewController.swift in Sources */,
 				7BD292031BF92243006BB075 /* LoginViewController.swift in Sources */,
-				7B602F111C4ADE83003D3E52 /* BTSearchViewController.swift in Sources */,
 				7B5447B81C1919AD008603D4 /* exerciseTableViewCell.swift in Sources */,
 				7BD291BE1BEE5F0F006BB075 /* ViewController.swift in Sources */,
-				7B602F0D1C4ADB6E003D3E52 /* BTService.swift in Sources */,
 				7BD292011BEE6063006BB075 /* Parse-VR.m in Sources */,
 				7B5447B21C190DE2008603D4 /* passwordSavedViewController.swift in Sources */,
-				7B602F0B1C4ADB5F003D3E52 /* BTDiscovery.swift in Sources */,
+				7BE73A211C8227AA00F7A80C /* SurveyTask.swift in Sources */,
 				7B5447B61C191991008603D4 /* exercisesTableView.swift in Sources */,
 				7B5447B41C191940008603D4 /* exercisesViewController.swift in Sources */,
 				7BD291BC1BEE5F0F006BB075 /* AppDelegate.swift in Sources */,
@@ -453,6 +464,11 @@
 			isa = PBXTargetDependency;
 			target = 7BD291B51BEE5F0F006BB075 /* VR_Monitoring */;
 			targetProxy = 7BD291CC1BEE5F0F006BB075 /* PBXContainerItemProxy */;
+		};
+		7BE73A1E1C8226CB00F7A80C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ResearchKit;
+			targetProxy = 7BE73A1D1C8226CB00F7A80C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -565,13 +581,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/saradasymonds/Downloads/parse-library-1.9.1",
+					/Users/saradasymonds/Documents/Projects/VR_monitoring/VR_Monitoring/Pods/Firebase,
 				);
 				INFOPLIST_FILE = VR_Monitoring/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "VR_Monitoring-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -583,13 +605,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/saradasymonds/Downloads/parse-library-1.9.1",
+					/Users/saradasymonds/Documents/Projects/VR_monitoring/VR_Monitoring/Pods/Firebase,
 				);
 				INFOPLIST_FILE = VR_Monitoring/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "VR_Monitoring-Bridging-Header.h";
 			};
 			name = Release;

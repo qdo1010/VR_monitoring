@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '53BD39F49DBE0A2F2131847F'
+               BlueprintIdentifier = '2ECC41B728418AE770901956'
                BlueprintName = 'Pods-VR_Monitoring'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_VR_Monitoring.framework'>

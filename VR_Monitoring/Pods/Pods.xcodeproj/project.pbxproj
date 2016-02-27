@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		012A7E018F3D34F159894EBD7EACACF9 /* Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = C30DAF734CAAF2F494DE720B2386CFFF /* Empty.m */; };
 		191DE2EB9A35585AE0A88BA9F833A1F4 /* FTransactionResult.h in Headers */ = {isa = PBXBuildFile; fileRef = B9A06FFED058218134C702A407304A9F /* FTransactionResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1C04A7CD5B70C4561F6D98C882731C65 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6204446BD9150A17B12E81B4A6F9CA8 /* Security.framework */; };
 		1C3EF85CD30E6FF2E51471BD5B3CEB29 /* Firebase.h in Headers */ = {isa = PBXBuildFile; fileRef = 99994D7C8CADD905BE2B9BBD61C5DAD8 /* Firebase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D925BB011B04DDED982C7946571A67A /* FAuthType.h in Headers */ = {isa = PBXBuildFile; fileRef = 891B0E2082543D26FADFA72F524E77AF /* FAuthType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D9D7FF5237C8CC91EF58DC45AC274FB /* Firebase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C0143DCE5A276FD546BC307BA6384A /* Firebase-dummy.m */; };
@@ -17,15 +16,23 @@
 		276CE5D63B5FF5F80A08A2624D7502C5 /* Pods-VR_Monitoring-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F4633FA7FE0B6D22D17C03FF28F7B6A /* Pods-VR_Monitoring-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F1496011DBBB75777645194AAAFE92D /* FirebaseApp.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CAA7C78DB3882A984A96D28F8AA2D41 /* FirebaseApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D63FF7334E7322A4CA68457FE9CE4EA /* Pods-VR_Monitoring-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F375FE4A00F34AE652994E2A7762A2 /* Pods-VR_Monitoring-dummy.m */; };
-		4B0EFAAA29109D9A705A27EFFA10FAE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C49D928448B31FB9A7D5AE5C8D6C4E /* Foundation.framework */; };
 		4D75CF0089B20355B17A851513C4A002 /* FQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = A2E2AC3209047C6550E8D065954966F5 /* FQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		60F9139BDD38565B78214C4FC5F5729D /* Firebase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A35E3E3F0CCA6B0B0A5E20810C135EA2 /* Firebase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6646DA26298257396C7FFE141BB84CC3 /* FirebaseServerValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 55000294CC62B92A597CC865BC53ECFC /* FirebaseServerValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7724CDFB339CA7500ACBEE53848C830E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C49D928448B31FB9A7D5AE5C8D6C4E /* Foundation.framework */; };
+		7BE73A3B1C82395300F7A80C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE73A3A1C82395300F7A80C /* CFNetwork.framework */; };
+		7BE73A3D1C82395C00F7A80C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE73A3C1C82395C00F7A80C /* Security.framework */; };
+		7BE73A3F1C82396400F7A80C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE73A3E1C82396400F7A80C /* SystemConfiguration.framework */; };
+		7BE73A411C82397300F7A80C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE73A401C82397300F7A80C /* Foundation.framework */; };
+		7BE73A431C82397C00F7A80C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE73A421C82397C00F7A80C /* CFNetwork.framework */; };
+		7BE73A441C82397C00F7A80C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE73A421C82397C00F7A80C /* CFNetwork.framework */; };
+		7BE73A461C82398000F7A80C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE73A451C82398000F7A80C /* Security.framework */; };
+		7BE73A471C82398000F7A80C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE73A451C82398000F7A80C /* Security.framework */; };
+		7BE73A491C82398800F7A80C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE73A481C82398800F7A80C /* SystemConfiguration.framework */; };
+		7BE73A4A1C82398800F7A80C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE73A481C82398800F7A80C /* SystemConfiguration.framework */; };
+		7BE73A4C1C82399000F7A80C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE73A4B1C82399000F7A80C /* Foundation.framework */; };
+		7BE73A4D1C82399000F7A80C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE73A4B1C82399000F7A80C /* Foundation.framework */; };
 		C23FCF31260D47CEC1494A292DAA1A1E /* FAuthData.h in Headers */ = {isa = PBXBuildFile; fileRef = CDBB06694A091085C1CDD755EBC4B578 /* FAuthData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB05A9DD8244D10C28B6915C514AE15F /* FMutableData.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E547A224BA2BD4DB4A5DB059D7F5898 /* FMutableData.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E1A883FEBDEED9B85D90D6BE2080F218 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6166BE40C18BC6BF0EED92CAB212EC33 /* SystemConfiguration.framework */; };
-		E3FBB5B462A14E8ACC9B340227DE4BE1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F85758B54CB0D843A3E97DFFB2F21F /* CFNetwork.framework */; };
 		E60FA42EEC3ECC48701DB55986D25D69 /* FConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 9726FDC67EF47C28FEC9A974D42B81B4 /* FConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8B534D15D2B25919ACD898217266891 /* FDataSnapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 85FE7BFEAA7B743553B973A7168CDD98 /* FDataSnapshot.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -48,10 +55,15 @@
 		3C7CA58E3DA234AA2574549CD49238A7 /* Firebase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Firebase.modulemap; sourceTree = "<group>"; };
 		55000294CC62B92A597CC865BC53ECFC /* FirebaseServerValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FirebaseServerValue.h; sourceTree = "<group>"; };
 		5B53D40669DFFA3F7763095D6DDFE3F0 /* Pods-VR_Monitoring.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VR_Monitoring.modulemap"; sourceTree = "<group>"; };
-		60F85758B54CB0D843A3E97DFFB2F21F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		6166BE40C18BC6BF0EED92CAB212EC33 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		660EAAD8A0B1D37FD05B48C6445DA10B /* Firebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Firebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		77C49D928448B31FB9A7D5AE5C8D6C4E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7BE73A3A1C82395300F7A80C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		7BE73A3C1C82395C00F7A80C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		7BE73A3E1C82396400F7A80C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		7BE73A401C82397300F7A80C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7BE73A421C82397C00F7A80C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		7BE73A451C82398000F7A80C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		7BE73A481C82398800F7A80C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		7BE73A4B1C82399000F7A80C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7E547A224BA2BD4DB4A5DB059D7F5898 /* FMutableData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FMutableData.h; sourceTree = "<group>"; };
 		7F4633FA7FE0B6D22D17C03FF28F7B6A /* Pods-VR_Monitoring-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VR_Monitoring-umbrella.h"; sourceTree = "<group>"; };
 		817BCDAD66E1493A462C3D125BB8A039 /* FEventType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FEventType.h; sourceTree = "<group>"; };
@@ -70,7 +82,6 @@
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BB957B9D965CCCD3FC489F507C39A261 /* Pods-VR_Monitoring.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VR_Monitoring.debug.xcconfig"; sourceTree = "<group>"; };
 		C30DAF734CAAF2F494DE720B2386CFFF /* Empty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Empty.m; sourceTree = "<group>"; };
-		C6204446BD9150A17B12E81B4A6F9CA8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		C9CA5BCA624F1C489EED3F5DCE508CE7 /* Pods-VR_Monitoring-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VR_Monitoring-acknowledgements.plist"; sourceTree = "<group>"; };
 		CDBB06694A091085C1CDD755EBC4B578 /* FAuthData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FAuthData.h; sourceTree = "<group>"; };
 		D5F375FE4A00F34AE652994E2A7762A2 /* Pods-VR_Monitoring-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VR_Monitoring-dummy.m"; sourceTree = "<group>"; };
@@ -84,10 +95,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3FBB5B462A14E8ACC9B340227DE4BE1 /* CFNetwork.framework in Frameworks */,
-				4B0EFAAA29109D9A705A27EFFA10FAE2 /* Foundation.framework in Frameworks */,
-				1C04A7CD5B70C4561F6D98C882731C65 /* Security.framework in Frameworks */,
-				E1A883FEBDEED9B85D90D6BE2080F218 /* SystemConfiguration.framework in Frameworks */,
+				7BE73A431C82397C00F7A80C /* CFNetwork.framework in Frameworks */,
+				7BE73A411C82397300F7A80C /* Foundation.framework in Frameworks */,
+				7BE73A3F1C82396400F7A80C /* SystemConfiguration.framework in Frameworks */,
+				7BE73A3D1C82395C00F7A80C /* Security.framework in Frameworks */,
+				7BE73A3B1C82395300F7A80C /* CFNetwork.framework in Frameworks */,
+				7BE73A491C82398800F7A80C /* SystemConfiguration.framework in Frameworks */,
+				7BE73A4C1C82399000F7A80C /* Foundation.framework in Frameworks */,
+				7BE73A461C82398000F7A80C /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +110,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7724CDFB339CA7500ACBEE53848C830E /* Foundation.framework in Frameworks */,
+				7BE73A4D1C82399000F7A80C /* Foundation.framework in Frameworks */,
+				7BE73A441C82397C00F7A80C /* CFNetwork.framework in Frameworks */,
+				7BE73A471C82398000F7A80C /* Security.framework in Frameworks */,
+				7BE73A4A1C82398800F7A80C /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +132,10 @@
 		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7BE73A401C82397300F7A80C /* Foundation.framework */,
+				7BE73A3E1C82396400F7A80C /* SystemConfiguration.framework */,
+				7BE73A3C1C82395C00F7A80C /* Security.framework */,
+				7BE73A3A1C82395300F7A80C /* CFNetwork.framework */,
 				843A690C4A272ACCFA5202DC4499C74E /* iOS */,
 			);
 			name = Frameworks;
@@ -159,10 +181,10 @@
 		843A690C4A272ACCFA5202DC4499C74E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				60F85758B54CB0D843A3E97DFFB2F21F /* CFNetwork.framework */,
-				77C49D928448B31FB9A7D5AE5C8D6C4E /* Foundation.framework */,
-				C6204446BD9150A17B12E81B4A6F9CA8 /* Security.framework */,
-				6166BE40C18BC6BF0EED92CAB212EC33 /* SystemConfiguration.framework */,
+				7BE73A4B1C82399000F7A80C /* Foundation.framework */,
+				7BE73A481C82398800F7A80C /* SystemConfiguration.framework */,
+				7BE73A451C82398000F7A80C /* Security.framework */,
+				7BE73A421C82397C00F7A80C /* CFNetwork.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -391,6 +413,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Firebase/Firebase.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = Firebase;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -418,6 +441,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Firebase/Firebase.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = Firebase;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;

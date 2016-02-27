@@ -225,12 +225,19 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="StatusLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m7R-B4-j4w">
+                                <rect key="frame" x="136" y="194" width="92" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="exerciseTitleLabel" destination="3X4-89-n60" id="1xm-fO-PvO"/>
                         <outlet property="startButton" destination="U9v-TB-btG" id="5M8-zu-Ua6"/>
+                        <outlet property="statusLabel" destination="m7R-B4-j4w" id="C2R-oa-BnV"/>
                         <outlet property="timeLabel" destination="wl1-0o-bzX" id="neU-i5-rq4"/>
                     </connections>
                 </viewController>
