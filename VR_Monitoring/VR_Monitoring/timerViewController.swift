@@ -25,6 +25,7 @@ class timerViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
     override func viewDidLoad() {
         super.viewDidLoad()
         exerciseTitleLabel.text = exerciseTitle
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg2.png")!)
         // Initialize central manager on load
         centralManager = CBCentralManager(delegate: self, queue: nil)
         // Do any additional setup after loading the view.

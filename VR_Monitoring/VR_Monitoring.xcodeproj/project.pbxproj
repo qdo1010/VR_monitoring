@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		10AC00DE8E3F9AE8E47F6AA8 /* Pods_VR_Monitoring.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0847791B12BCD63F5CB1ABB3 /* Pods_VR_Monitoring.framework */; };
+		7B4815611C990492008FF30A /* Running Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4815601C990492008FF30A /* Running Filled-50.png */; };
+		7B4815651C990517008FF30A /* Running Filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4815641C990517008FF30A /* Running Filled-25.png */; };
+		7B4815671C990544008FF30A /* Running Filled-35.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4815661C990544008FF30A /* Running Filled-35.png */; };
+		7B4815691C9905D7008FF30A /* Contacts-35.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4815681C9905D7008FF30A /* Contacts-35.png */; };
+		7B48156B1C99062B008FF30A /* Speech Bubble Filled-35.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B48156A1C99062B008FF30A /* Speech Bubble Filled-35.png */; };
+		7B48156E1C99AD96008FF30A /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B48156D1C99AD96008FF30A /* MainTabBar.swift */; };
+		7B4815721C99B28D008FF30A /* Running-35.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4815711C99B28D008FF30A /* Running-35.png */; };
+		7B4815741C99B2B7008FF30A /* Speech Bubble-35.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4815731C99B2B7008FF30A /* Speech Bubble-35.png */; };
+		7B4815761C99B2D7008FF30A /* Bar Chart Filled-35.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4815751C99B2D7008FF30A /* Bar Chart Filled-35.png */; };
+		7B4815781C99B4D5008FF30A /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4815771C99B4D5008FF30A /* ProgressViewController.swift */; };
+		7B48157A1C99B563008FF30A /* MessagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4815791C99B563008FF30A /* MessagingViewController.swift */; };
+		7B48157C1C99C556008FF30A /* bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B48157B1C99C556008FF30A /* bg2.png */; };
 		7B5447B21C190DE2008603D4 /* passwordSavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5447B11C190DE2008603D4 /* passwordSavedViewController.swift */; };
 		7B5447B41C191940008603D4 /* exercisesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5447B31C191940008603D4 /* exercisesViewController.swift */; };
 		7B5447B61C191991008603D4 /* exercisesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5447B51C191991008603D4 /* exercisesTableView.swift */; };
@@ -88,6 +100,18 @@
 		091E96F26D5B009629D2B64A /* Pods-VR_Monitoring.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VR_Monitoring.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VR_Monitoring/Pods-VR_Monitoring.debug.xcconfig"; sourceTree = "<group>"; };
 		4B901D69C8EFDC59B6932D08 /* Pods-VR_Monitoring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VR_Monitoring.release.xcconfig"; path = "Pods/Target Support Files/Pods-VR_Monitoring/Pods-VR_Monitoring.release.xcconfig"; sourceTree = "<group>"; };
 		7B2C5C631C80FDAC00143D29 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ../ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
+		7B4815601C990492008FF30A /* Running Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Running Filled-50.png"; path = "../../../../../Downloads/Running Filled-50.png"; sourceTree = "<group>"; };
+		7B4815641C990517008FF30A /* Running Filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Running Filled-25.png"; path = "../../../../../Downloads/Running Filled-25.png"; sourceTree = "<group>"; };
+		7B4815661C990544008FF30A /* Running Filled-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Running Filled-35.png"; path = "../../../../../Downloads/Running Filled-35.png"; sourceTree = "<group>"; };
+		7B4815681C9905D7008FF30A /* Contacts-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Contacts-35.png"; path = "../../../../../Downloads/Contacts-35.png"; sourceTree = "<group>"; };
+		7B48156A1C99062B008FF30A /* Speech Bubble Filled-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Speech Bubble Filled-35.png"; path = "../../../../../Downloads/Speech Bubble Filled-35.png"; sourceTree = "<group>"; };
+		7B48156D1C99AD96008FF30A /* MainTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		7B4815711C99B28D008FF30A /* Running-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Running-35.png"; path = "../../../../../Downloads/Running-35.png"; sourceTree = "<group>"; };
+		7B4815731C99B2B7008FF30A /* Speech Bubble-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Speech Bubble-35.png"; path = "../../../../../Downloads/Speech Bubble-35.png"; sourceTree = "<group>"; };
+		7B4815751C99B2D7008FF30A /* Bar Chart Filled-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Bar Chart Filled-35.png"; path = "../../../../../Downloads/Bar Chart Filled-35.png"; sourceTree = "<group>"; };
+		7B4815771C99B4D5008FF30A /* ProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		7B4815791C99B563008FF30A /* MessagingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagingViewController.swift; sourceTree = "<group>"; };
+		7B48157B1C99C556008FF30A /* bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg2.png; path = "../../../../../Downloads/5-colorful-backgrounds/PNG/bg2.png"; sourceTree = "<group>"; };
 		7B5447B11C190DE2008603D4 /* passwordSavedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = passwordSavedViewController.swift; sourceTree = "<group>"; };
 		7B5447B31C191940008603D4 /* exercisesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exercisesViewController.swift; sourceTree = "<group>"; };
 		7B5447B51C191991008603D4 /* exercisesTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exercisesTableView.swift; sourceTree = "<group>"; };
@@ -222,14 +246,18 @@
 				7BD292021BF92243006BB075 /* LoginViewController.swift */,
 				7B5447B11C190DE2008603D4 /* passwordSavedViewController.swift */,
 				7BD291BF1BEE5F0F006BB075 /* Main.storyboard */,
+				7B48156D1C99AD96008FF30A /* MainTabBar.swift */,
 				7B5447B91C192F07008603D4 /* timerViewController.swift */,
 				7B5447B31C191940008603D4 /* exercisesViewController.swift */,
 				7B5447B51C191991008603D4 /* exercisesTableView.swift */,
+				7B4815681C9905D7008FF30A /* Contacts-35.png */,
 				7B5447B71C1919AD008603D4 /* exerciseTableViewCell.swift */,
 				7BD291C21BEE5F0F006BB075 /* Images.xcassets */,
 				7BD291C41BEE5F0F006BB075 /* LaunchScreen.xib */,
 				7BD291B91BEE5F0F006BB075 /* Supporting Files */,
 				7BE73A201C8227AA00F7A80C /* SurveyTask.swift */,
+				7B4815771C99B4D5008FF30A /* ProgressViewController.swift */,
+				7B4815791C99B563008FF30A /* MessagingViewController.swift */,
 			);
 			path = VR_Monitoring;
 			sourceTree = "<group>";
@@ -237,6 +265,14 @@
 		7BD291B91BEE5F0F006BB075 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7B4815601C990492008FF30A /* Running Filled-50.png */,
+				7B4815711C99B28D008FF30A /* Running-35.png */,
+				7B48157B1C99C556008FF30A /* bg2.png */,
+				7B4815661C990544008FF30A /* Running Filled-35.png */,
+				7B4815731C99B2B7008FF30A /* Speech Bubble-35.png */,
+				7B4815751C99B2D7008FF30A /* Bar Chart Filled-35.png */,
+				7B48156A1C99062B008FF30A /* Speech Bubble Filled-35.png */,
+				7B4815641C990517008FF30A /* Running Filled-25.png */,
 				7BD291BA1BEE5F0F006BB075 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -368,9 +404,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B4815691C9905D7008FF30A /* Contacts-35.png in Resources */,
+				7B4815671C990544008FF30A /* Running Filled-35.png in Resources */,
+				7B4815741C99B2B7008FF30A /* Speech Bubble-35.png in Resources */,
 				7BD291C11BEE5F0F006BB075 /* Main.storyboard in Resources */,
 				7BD291C61BEE5F0F006BB075 /* LaunchScreen.xib in Resources */,
+				7B4815651C990517008FF30A /* Running Filled-25.png in Resources */,
+				7B4815761C99B2D7008FF30A /* Bar Chart Filled-35.png in Resources */,
+				7B4815721C99B28D008FF30A /* Running-35.png in Resources */,
 				7BD291C31BEE5F0F006BB075 /* Images.xcassets in Resources */,
+				7B48157C1C99C556008FF30A /* bg2.png in Resources */,
+				7B4815611C990492008FF30A /* Running Filled-50.png in Resources */,
+				7B48156B1C99062B008FF30A /* Speech Bubble Filled-35.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,7 +484,10 @@
 				7B5447BA1C192F07008603D4 /* timerViewController.swift in Sources */,
 				7BD292031BF92243006BB075 /* LoginViewController.swift in Sources */,
 				7B5447B81C1919AD008603D4 /* exerciseTableViewCell.swift in Sources */,
+				7B48157A1C99B563008FF30A /* MessagingViewController.swift in Sources */,
+				7B4815781C99B4D5008FF30A /* ProgressViewController.swift in Sources */,
 				7BD291BE1BEE5F0F006BB075 /* ViewController.swift in Sources */,
+				7B48156E1C99AD96008FF30A /* MainTabBar.swift in Sources */,
 				7BD292011BEE6063006BB075 /* Parse-VR.m in Sources */,
 				7B5447B21C190DE2008603D4 /* passwordSavedViewController.swift in Sources */,
 				7BE73A211C8227AA00F7A80C /* SurveyTask.swift in Sources */,

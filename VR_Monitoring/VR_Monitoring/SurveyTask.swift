@@ -12,22 +12,13 @@ public var SurveyTask: ORKOrderedTask {
     var steps = [ORKStep]()
     
     //add survey questions in swift
-    let questQuestionStepTitle = "What is your quest?"
-    let textChoices = [
-        ORKTextChoice(text: "Create a ResearchKit App", value: 0),
-        ORKTextChoice(text: "Seek the Holy Grail", value: 1),
-        ORKTextChoice(text: "Find a shrubbery", value: 2)
-    ]
-    let questAnswerFormat: ORKTextChoiceAnswerFormat = ORKAnswerFormat.choiceAnswerFormatWithStyle(.SingleChoice, textChoices: textChoices)
-    let questQuestionStep = ORKQuestionStep(identifier: "TextChoiceQuestionStep", title: questQuestionStepTitle, answer: questAnswerFormat)
-    steps += [questQuestionStep]
+    let step1AnswerFormat = ORKAnswerFormat.scaleAnswerFormatWithMaximumValue(10, minimumValue: 1, defaultValue: NSIntegerMax, step: 1, vertical: false, maximumValueDescription: "High Value", minimumValueDescription: "Low value")
     
-    let effortQuestionStepTitle = "How much effort did you feel you exerted today?"
-    //let effortAnswerFormat: ORKScaleAnswerFormat = ORKAnswerFormat.choiceAnswer(10, 0, 1, 5)
-    //let effortQuesetionStep = ORKQuestionStep(identifier: "ScaleQuestionStep", title: effortQuesetionStepTitle, answer: effortAnswerFormat)
-    //steps += [effortQuesetionStep]
+    let questionStep1 = ORKQuestionStep(identifier: "ScaleQuestionTask", title: "How would you rate your effort?", answer: step1AnswerFormat)
     
-    //TODO: add summary step
+    questionStep1.text = "How would you rate your effort?"
+    
+    steps += [questionStep1]
     
     return ORKOrderedTask(identifier: "SurveyTask", steps: steps)
 }

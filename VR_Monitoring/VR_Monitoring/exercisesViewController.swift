@@ -14,9 +14,13 @@ class exercisesViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        var firstViewController:UITableViewController = self
+        // The following statement is what you need
+        var customTabBarItem:UITabBarItem = UITabBarItem(title: nil, image: UIImage(named: "Running-35.png")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal), selectedImage: UIImage(named: "Running-35.png"))
+        firstViewController.tabBarItem = customTabBarItem
+        customTabBarItem.imageInsets.top = 6
+        customTabBarItem.imageInsets.bottom = -6
         
-        
-
         // Do any additional setup after loading the view.
     }
 
@@ -25,7 +29,7 @@ class exercisesViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    let exerciseList = ["River Run", "Rushin River Run"]
+    let exerciseList = ["River Rush", "20,000 Leaks", "Rally Ball", "Reflex Ridge", "Space Pop"]
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return exerciseList.count
     }

@@ -1,0 +1,24 @@
+//
+//  ProgressViewController.swift
+//  VR_Monitoring
+//
+//  Created by Sarada Symonds on 3/16/16.
+//  Copyright (c) 2016 NU Enabling Engineering. All rights reserved.
+//
+
+import UIKit
+
+class ProgressViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        var firstViewController:UIViewController = self
+        // The following statement is what you need
+        var customTabBarItem:UITabBarItem = UITabBarItem(title: nil, image: UIImage(named: "Bar Chart Filled-35.png")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal), selectedImage: UIImage(named: "Bar Chart Filled-35.png"))
+        firstViewController.tabBarItem = customTabBarItem
+        customTabBarItem.imageInsets.top = 10
+        customTabBarItem.imageInsets.bottom = -6
+        
+        
+        // Do any additional setup after loading the view.
+    }
+}
