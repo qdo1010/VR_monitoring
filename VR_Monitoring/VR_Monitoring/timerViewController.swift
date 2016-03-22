@@ -72,7 +72,7 @@ class timerViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
     
     
     func updateTime() {
-        var currentTime = NSDate.timeIntervalSinceReferenceDate()
+        let currentTime = NSDate.timeIntervalSinceReferenceDate()
         
         //Find the difference between current time and start time.
         var elapsedTime: NSTimeInterval = currentTime - startTime
