@@ -10,12 +10,17 @@ import UIKit
 
 class exercisesViewController: UITableViewController {
 
+    var userName = String()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        var firstViewController:UITableViewController = self
+        // The following statement is what you need
+        var customTabBarItem:UITabBarItem = UITabBarItem(title: nil, image: UIImage(named: "Running-35.png")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal), selectedImage: UIImage(named: "Running-35.png"))
+        firstViewController.tabBarItem = customTabBarItem
+        customTabBarItem.imageInsets.top = 6
+        customTabBarItem.imageInsets.bottom = -6
         
-
         // Do any additional setup after loading the view.
     }
 
@@ -24,7 +29,7 @@ class exercisesViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    let exerciseList = ["River Run", "Rushin River Run"]
+    let exerciseList = ["River Rush", "20,000 Leaks", "Rally Ball", "Reflex Ridge", "Space Pop"]
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return exerciseList.count
     }
@@ -37,10 +42,19 @@ class exercisesViewController: UITableViewController {
         // Fetches the appropriate meal for the data source layout.
         cell.exerciseTitle!.text = exerciseList[indexPath.row]
         
+        
         return cell
     }
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.performSegueWithIdentifier("toExerciseTimer", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var TimerViewController: timerViewController = segue.destinationViewController as! timerViewController
+        TimerViewController.userName = userName
+        let indexPath = tableView.indexPathForSelectedRow()
+        TimerViewController.exerciseTitle = exerciseList[indexPath!.row]
+        
     }
     
     /*

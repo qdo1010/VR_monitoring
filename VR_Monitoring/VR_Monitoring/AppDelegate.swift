@@ -7,24 +7,42 @@
 //
 
 import UIKit
-import Parse
-import Bolts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // [Optional] Power your app with Local Datastore. For more info, go to
-        // https://parse.com/docs/ios_guide#localdatastore/iOS
-        Parse.enableLocalDatastore()
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) ->
+        Bool {
+        UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
+        let mytabBarColor = UIColor(
+            red: 0.03,
+            green: 0.8,
+            blue: 0.86,
+            alpha: 1.0)
+        let itemsColor = UIColor(
+            red: 0.09,
+            green: 0.69,
+            blue: 0.89,
+            alpha: 1.0)
+        let selecteditemsColor = UIColor(
+            red: 0.64,
+            green: 0.88,
+            blue: 0.96,
+            alpha: 1.0)
+        UINavigationBar.appearance().barTintColor = mytabBarColor
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        UINavigationBar.appearance().translucent = false
+        UITabBar.appearance().barTintColor = mytabBarColor
+        //UITabBar.appearance().tintColor = UIColor.whiteColor()
+        UITabBar.appearance().translucent = false
+        //UIBarButtonItem.appearance().tintColor = UIColor.whiteColor()
+        /*UIApplication.sharedApplication().statusBarHidden = false
+        UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent*/
+        var addStatusBar = UIView()
+        self.window?.rootViewController?.view .addSubview(addStatusBar)
         
-        // Initialize Parse.
-        Parse.setApplicationId("ExsqhX6lL8RlwcMZuNPHsKEV2Tb17fFz5WpnLaRN",
-            clientKey: "IXax5T864A79LNKweHrq7ED361EFJz0YVecKNI2d")
         
-        // [Optional] Track statistics around application opens.
-        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
-
         return true
     }
 

@@ -7,12 +7,16 @@
 //
 
 import UIKit
-import Parse
+import Firebase
+
 
 class passwordSavedViewController: UIViewController {
     
+    var userName = String()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg2.png")!)
         // Do any additional setup after loading the view, typically from a nib.
         self.dismissViewControllerAnimated(true, completion: nil)
         // Delay execution of my block for 10 seconds.
@@ -23,12 +27,24 @@ class passwordSavedViewController: UIViewController {
         runAfterDelay(1) {
             self.performSegueWithIdentifier("toMainScreen", sender: self)
         }
+
         
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        /*let tabBarController = segue.destinationViewController as! UITabBarController
+        var ExerViewController: exercisesViewController = tabBarController.viewControllers![0] as! exercisesViewController
+        ExerViewController.userName = userName
+        let tabBarController = segue.destinationViewController as! UITabBarController
+        let barViewControllers = self.tabBarController?.viewControllers
+        let exer = barViewControllers![0] as! exercisesViewController
+        exer.userName = userName*/
+        
     }
     
     
