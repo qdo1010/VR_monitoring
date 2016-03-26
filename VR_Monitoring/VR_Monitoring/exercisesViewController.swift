@@ -14,9 +14,9 @@ class exercisesViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        var firstViewController:UITableViewController = self
+        let firstViewController:UITableViewController = self
         // The following statement is what you need
-        var customTabBarItem:UITabBarItem = UITabBarItem(title: nil, image: UIImage(named: "Running-35.png")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal), selectedImage: UIImage(named: "Running-35.png"))
+        let customTabBarItem:UITabBarItem = UITabBarItem(title: nil, image: UIImage(named: "Running-35.png")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal), selectedImage: UIImage(named: "Running-35.png"))
         firstViewController.tabBarItem = customTabBarItem
         customTabBarItem.imageInsets.top = 6
         customTabBarItem.imageInsets.bottom = -6
@@ -50,9 +50,9 @@ class exercisesViewController: UITableViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var TimerViewController: timerViewController = segue.destinationViewController as! timerViewController
+        let TimerViewController: timerViewController = segue.destinationViewController as! timerViewController
         TimerViewController.userName = userName
-        let indexPath = tableView.indexPathForSelectedRow()
+        let indexPath = tableView.indexPathForSelectedRow
         TimerViewController.exerciseTitle = exerciseList[indexPath!.row]
         
     }

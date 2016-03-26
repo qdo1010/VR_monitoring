@@ -39,7 +39,7 @@ class BTDiscovery: NSObject, CBCentralManagerDelegate {
     
     // MARK: - CBCentralManagerDelegate
     
-   func centralManager(central: CBCentralManager, didDiscoverPeripheral peripheral: CBPeripheral, advertisementData: [String : AnyObject], RSSI: NSNumber) {
+   func centralManager(central: CBCentralManager!, didDiscoverPeripheral peripheral: CBPeripheral!, advertisementData: [NSObject : AnyObject]!, RSSI: NSNumber) {
         // Be sure to retain the peripheral or it will fail during connection.
         
         // Validate peripheral information
@@ -104,7 +104,7 @@ class BTDiscovery: NSObject, CBCentralManagerDelegate {
             break
             
         case CBCentralManagerState.PoweredOn:
-            print("scannin")
+            println("scannin")
             self.startScanning()
             
         case CBCentralManagerState.Resetting:

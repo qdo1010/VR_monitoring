@@ -8,18 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		10AC00DE8E3F9AE8E47F6AA8 /* Pods_VR_Monitoring.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0847791B12BCD63F5CB1ABB3 /* Pods_VR_Monitoring.framework */; };
-		7B4815611C990492008FF30A /* Running Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4815601C990492008FF30A /* Running Filled-50.png */; };
-		7B4815651C990517008FF30A /* Running Filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4815641C990517008FF30A /* Running Filled-25.png */; };
-		7B4815671C990544008FF30A /* Running Filled-35.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4815661C990544008FF30A /* Running Filled-35.png */; };
-		7B4815691C9905D7008FF30A /* Contacts-35.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4815681C9905D7008FF30A /* Contacts-35.png */; };
-		7B48156B1C99062B008FF30A /* Speech Bubble Filled-35.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B48156A1C99062B008FF30A /* Speech Bubble Filled-35.png */; };
 		7B48156E1C99AD96008FF30A /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B48156D1C99AD96008FF30A /* MainTabBar.swift */; };
-		7B4815721C99B28D008FF30A /* Running-35.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4815711C99B28D008FF30A /* Running-35.png */; };
-		7B4815741C99B2B7008FF30A /* Speech Bubble-35.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4815731C99B2B7008FF30A /* Speech Bubble-35.png */; };
-		7B4815761C99B2D7008FF30A /* Bar Chart Filled-35.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4815751C99B2D7008FF30A /* Bar Chart Filled-35.png */; };
 		7B4815781C99B4D5008FF30A /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4815771C99B4D5008FF30A /* ProgressViewController.swift */; };
 		7B48157A1C99B563008FF30A /* MessagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4815791C99B563008FF30A /* MessagingViewController.swift */; };
-		7B48157C1C99C556008FF30A /* bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B48157B1C99C556008FF30A /* bg2.png */; };
 		7B5447B21C190DE2008603D4 /* passwordSavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5447B11C190DE2008603D4 /* passwordSavedViewController.swift */; };
 		7B5447B41C191940008603D4 /* exercisesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5447B31C191940008603D4 /* exercisesViewController.swift */; };
 		7B5447B61C191991008603D4 /* exercisesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5447B51C191991008603D4 /* exercisesTableView.swift */; };
@@ -45,26 +36,16 @@
 		7BD291F01BEE601F006BB075 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD291EF1BEE601F006BB075 /* libsqlite3.dylib */; };
 		7BD292011BEE6063006BB075 /* Parse-VR.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD292001BEE6063006BB075 /* Parse-VR.m */; };
 		7BD292031BF92243006BB075 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD292021BF92243006BB075 /* LoginViewController.swift */; };
-		7BE73A1B1C8226CB00F7A80C /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2C5C6A1C80FDAC00143D29 /* ResearchKit.framework */; };
-		7BE73A1C1C8226CB00F7A80C /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2C5C6A1C80FDAC00143D29 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7BE73A211C8227AA00F7A80C /* SurveyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE73A201C8227AA00F7A80C /* SurveyTask.swift */; };
+		979EA3BA1C9DC66A000257EF /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9768C90E1C9B949A002487D5 /* ResearchKit.framework */; };
+		979EA3BB1C9DC66A000257EF /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9768C90E1C9B949A002487D5 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		979EA3C21C9DC7EC000257EF /* Bar Chart Filled-35.png in Resources */ = {isa = PBXBuildFile; fileRef = 979EA3BE1C9DC7EC000257EF /* Bar Chart Filled-35.png */; };
+		979EA3C31C9DC7EC000257EF /* bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 979EA3BF1C9DC7EC000257EF /* bg2.png */; };
+		979EA3C41C9DC7EC000257EF /* Running-35.png in Resources */ = {isa = PBXBuildFile; fileRef = 979EA3C01C9DC7EC000257EF /* Running-35.png */; };
+		979EA3C51C9DC7EC000257EF /* Speech Bubble-35.png in Resources */ = {isa = PBXBuildFile; fileRef = 979EA3C11C9DC7EC000257EF /* Speech Bubble-35.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7B2C5C691C80FDAC00143D29 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7B2C5C631C80FDAC00143D29 /* ResearchKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B183A5951A8535D100C76870;
-			remoteInfo = ResearchKit;
-		};
-		7B2C5C6B1C80FDAC00143D29 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7B2C5C631C80FDAC00143D29 /* ResearchKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
-			remoteInfo = ResearchKitTests;
-		};
 		7BD291CC1BEE5F0F006BB075 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7BD291AE1BEE5F0F006BB075 /* Project object */;
@@ -72,9 +53,23 @@
 			remoteGlobalIDString = 7BD291B51BEE5F0F006BB075;
 			remoteInfo = VR_Monitoring;
 		};
-		7BE73A1D1C8226CB00F7A80C /* PBXContainerItemProxy */ = {
+		9768C90D1C9B949A002487D5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7B2C5C631C80FDAC00143D29 /* ResearchKit.xcodeproj */;
+			containerPortal = 9768C9071C9B949A002487D5 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		9768C90F1C9B949A002487D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9768C9071C9B949A002487D5 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
+		979EA3BC1C9DC66A000257EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9768C9071C9B949A002487D5 /* ResearchKit.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = B183A4731A8535D100C76870;
 			remoteInfo = ResearchKit;
@@ -88,7 +83,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7BE73A1C1C8226CB00F7A80C /* ResearchKit.framework in Embed Frameworks */,
+				979EA3BB1C9DC66A000257EF /* ResearchKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,19 +94,9 @@
 		0847791B12BCD63F5CB1ABB3 /* Pods_VR_Monitoring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VR_Monitoring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		091E96F26D5B009629D2B64A /* Pods-VR_Monitoring.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VR_Monitoring.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VR_Monitoring/Pods-VR_Monitoring.debug.xcconfig"; sourceTree = "<group>"; };
 		4B901D69C8EFDC59B6932D08 /* Pods-VR_Monitoring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VR_Monitoring.release.xcconfig"; path = "Pods/Target Support Files/Pods-VR_Monitoring/Pods-VR_Monitoring.release.xcconfig"; sourceTree = "<group>"; };
-		7B2C5C631C80FDAC00143D29 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ../ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
-		7B4815601C990492008FF30A /* Running Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Running Filled-50.png"; path = "../../../../../Downloads/Running Filled-50.png"; sourceTree = "<group>"; };
-		7B4815641C990517008FF30A /* Running Filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Running Filled-25.png"; path = "../../../../../Downloads/Running Filled-25.png"; sourceTree = "<group>"; };
-		7B4815661C990544008FF30A /* Running Filled-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Running Filled-35.png"; path = "../../../../../Downloads/Running Filled-35.png"; sourceTree = "<group>"; };
-		7B4815681C9905D7008FF30A /* Contacts-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Contacts-35.png"; path = "../../../../../Downloads/Contacts-35.png"; sourceTree = "<group>"; };
-		7B48156A1C99062B008FF30A /* Speech Bubble Filled-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Speech Bubble Filled-35.png"; path = "../../../../../Downloads/Speech Bubble Filled-35.png"; sourceTree = "<group>"; };
 		7B48156D1C99AD96008FF30A /* MainTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
-		7B4815711C99B28D008FF30A /* Running-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Running-35.png"; path = "../../../../../Downloads/Running-35.png"; sourceTree = "<group>"; };
-		7B4815731C99B2B7008FF30A /* Speech Bubble-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Speech Bubble-35.png"; path = "../../../../../Downloads/Speech Bubble-35.png"; sourceTree = "<group>"; };
-		7B4815751C99B2D7008FF30A /* Bar Chart Filled-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Bar Chart Filled-35.png"; path = "../../../../../Downloads/Bar Chart Filled-35.png"; sourceTree = "<group>"; };
 		7B4815771C99B4D5008FF30A /* ProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		7B4815791C99B563008FF30A /* MessagingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagingViewController.swift; sourceTree = "<group>"; };
-		7B48157B1C99C556008FF30A /* bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg2.png; path = "../../../../../Downloads/5-colorful-backgrounds/PNG/bg2.png"; sourceTree = "<group>"; };
 		7B5447B11C190DE2008603D4 /* passwordSavedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = passwordSavedViewController.swift; sourceTree = "<group>"; };
 		7B5447B31C191940008603D4 /* exercisesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exercisesViewController.swift; sourceTree = "<group>"; };
 		7B5447B51C191991008603D4 /* exercisesTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exercisesTableView.swift; sourceTree = "<group>"; };
@@ -143,6 +128,11 @@
 		7BD292001BEE6063006BB075 /* Parse-VR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Parse-VR.m"; sourceTree = "<group>"; };
 		7BD292021BF92243006BB075 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7BE73A201C8227AA00F7A80C /* SurveyTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyTask.swift; sourceTree = "<group>"; };
+		9768C9071C9B949A002487D5 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ../ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
+		979EA3BE1C9DC7EC000257EF /* Bar Chart Filled-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Bar Chart Filled-35.png"; path = "../../Bar Chart Filled-35.png"; sourceTree = "<group>"; };
+		979EA3BF1C9DC7EC000257EF /* bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg2.png; path = ../../bg2.png; sourceTree = "<group>"; };
+		979EA3C01C9DC7EC000257EF /* Running-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Running-35.png"; path = "../../Running-35.png"; sourceTree = "<group>"; };
+		979EA3C11C9DC7EC000257EF /* Speech Bubble-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Speech Bubble-35.png"; path = "../../Speech Bubble-35.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +152,7 @@
 				7BD291E01BEE5FAD006BB075 /* CoreGraphics.framework in Frameworks */,
 				7BD291DE1BEE5FA6006BB075 /* CFNetwork.framework in Frameworks */,
 				7BD291DC1BEE5F4F006BB075 /* AudioToolbox.framework in Frameworks */,
-				7BE73A1B1C8226CB00F7A80C /* ResearchKit.framework in Frameworks */,
+				979EA3BA1C9DC66A000257EF /* ResearchKit.framework in Frameworks */,
 				10AC00DE8E3F9AE8E47F6AA8 /* Pods_VR_Monitoring.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,19 +184,10 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		7B2C5C641C80FDAC00143D29 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7B2C5C6A1C80FDAC00143D29 /* ResearchKit.framework */,
-				7B2C5C6C1C80FDAC00143D29 /* ResearchKitTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		7BD291AD1BEE5F0F006BB075 = {
 			isa = PBXGroup;
 			children = (
-				7B2C5C631C80FDAC00143D29 /* ResearchKit.xcodeproj */,
+				9768C9071C9B949A002487D5 /* ResearchKit.xcodeproj */,
 				7B602F0E1C4ADBCC003D3E52 /* CoreBluetooth.framework */,
 				7BD292001BEE6063006BB075 /* Parse-VR.m */,
 				7BD291EF1BEE601F006BB075 /* libsqlite3.dylib */,
@@ -250,7 +231,6 @@
 				7B5447B91C192F07008603D4 /* timerViewController.swift */,
 				7B5447B31C191940008603D4 /* exercisesViewController.swift */,
 				7B5447B51C191991008603D4 /* exercisesTableView.swift */,
-				7B4815681C9905D7008FF30A /* Contacts-35.png */,
 				7B5447B71C1919AD008603D4 /* exerciseTableViewCell.swift */,
 				7BD291C21BEE5F0F006BB075 /* Images.xcassets */,
 				7BD291C41BEE5F0F006BB075 /* LaunchScreen.xib */,
@@ -265,14 +245,10 @@
 		7BD291B91BEE5F0F006BB075 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7B4815601C990492008FF30A /* Running Filled-50.png */,
-				7B4815711C99B28D008FF30A /* Running-35.png */,
-				7B48157B1C99C556008FF30A /* bg2.png */,
-				7B4815661C990544008FF30A /* Running Filled-35.png */,
-				7B4815731C99B2B7008FF30A /* Speech Bubble-35.png */,
-				7B4815751C99B2D7008FF30A /* Bar Chart Filled-35.png */,
-				7B48156A1C99062B008FF30A /* Speech Bubble Filled-35.png */,
-				7B4815641C990517008FF30A /* Running Filled-25.png */,
+				979EA3BE1C9DC7EC000257EF /* Bar Chart Filled-35.png */,
+				979EA3BF1C9DC7EC000257EF /* bg2.png */,
+				979EA3C01C9DC7EC000257EF /* Running-35.png */,
+				979EA3C11C9DC7EC000257EF /* Speech Bubble-35.png */,
 				7BD291BA1BEE5F0F006BB075 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -295,6 +271,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9768C9081C9B949A002487D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9768C90E1C9B949A002487D5 /* ResearchKit.framework */,
+				9768C9101C9B949A002487D5 /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -313,7 +298,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				7BE73A1E1C8226CB00F7A80C /* PBXTargetDependency */,
+				979EA3BD1C9DC66A000257EF /* PBXTargetDependency */,
 			);
 			name = VR_Monitoring;
 			productName = VR_Monitoring;
@@ -346,12 +331,12 @@
 			attributes = {
 				LastSwiftMigration = 0720;
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "NU Enabling Engineering";
 				TargetAttributes = {
 					7BD291B51BEE5F0F006BB075 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = 6DQ27LZX5A;
+						DevelopmentTeam = B6V3A9ZNJX;
 					};
 					7BD291CA1BEE5F0F006BB075 = {
 						CreatedOnToolsVersion = 6.4;
@@ -372,8 +357,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 7B2C5C641C80FDAC00143D29 /* Products */;
-					ProjectRef = 7B2C5C631C80FDAC00143D29 /* ResearchKit.xcodeproj */;
+					ProductGroup = 9768C9081C9B949A002487D5 /* Products */;
+					ProjectRef = 9768C9071C9B949A002487D5 /* ResearchKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -385,18 +370,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		7B2C5C6A1C80FDAC00143D29 /* ResearchKit.framework */ = {
+		9768C90E1C9B949A002487D5 /* ResearchKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = ResearchKit.framework;
-			remoteRef = 7B2C5C691C80FDAC00143D29 /* PBXContainerItemProxy */;
+			remoteRef = 9768C90D1C9B949A002487D5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		7B2C5C6C1C80FDAC00143D29 /* ResearchKitTests.xctest */ = {
+		9768C9101C9B949A002487D5 /* ResearchKitTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ResearchKitTests.xctest;
-			remoteRef = 7B2C5C6B1C80FDAC00143D29 /* PBXContainerItemProxy */;
+			remoteRef = 9768C90F1C9B949A002487D5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -406,18 +391,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B4815691C9905D7008FF30A /* Contacts-35.png in Resources */,
-				7B4815671C990544008FF30A /* Running Filled-35.png in Resources */,
-				7B4815741C99B2B7008FF30A /* Speech Bubble-35.png in Resources */,
+				979EA3C51C9DC7EC000257EF /* Speech Bubble-35.png in Resources */,
+				979EA3C31C9DC7EC000257EF /* bg2.png in Resources */,
 				7BD291C11BEE5F0F006BB075 /* Main.storyboard in Resources */,
 				7BD291C61BEE5F0F006BB075 /* LaunchScreen.xib in Resources */,
-				7B4815651C990517008FF30A /* Running Filled-25.png in Resources */,
-				7B4815761C99B2D7008FF30A /* Bar Chart Filled-35.png in Resources */,
-				7B4815721C99B28D008FF30A /* Running-35.png in Resources */,
+				979EA3C21C9DC7EC000257EF /* Bar Chart Filled-35.png in Resources */,
 				7BD291C31BEE5F0F006BB075 /* Images.xcassets in Resources */,
-				7B48157C1C99C556008FF30A /* bg2.png in Resources */,
-				7B4815611C990492008FF30A /* Running Filled-50.png in Resources */,
-				7B48156B1C99062B008FF30A /* Speech Bubble Filled-35.png in Resources */,
+				979EA3C41C9DC7EC000257EF /* Running-35.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,10 +495,10 @@
 			target = 7BD291B51BEE5F0F006BB075 /* VR_Monitoring */;
 			targetProxy = 7BD291CC1BEE5F0F006BB075 /* PBXContainerItemProxy */;
 		};
-		7BE73A1E1C8226CB00F7A80C /* PBXTargetDependency */ = {
+		979EA3BD1C9DC66A000257EF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ResearchKit;
-			targetProxy = 7BE73A1D1C8226CB00F7A80C /* PBXContainerItemProxy */;
+			targetProxy = 979EA3BC1C9DC66A000257EF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -563,6 +543,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -633,6 +614,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/saradasymonds/Downloads/parse-library-1.9.1",
@@ -641,6 +623,7 @@
 				INFOPLIST_FILE = VR_Monitoring/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "nuenablingengineering.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -657,6 +640,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/saradasymonds/Downloads/parse-library-1.9.1",
@@ -665,6 +649,7 @@
 				INFOPLIST_FILE = VR_Monitoring/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "nuenablingengineering.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -686,6 +671,7 @@
 				);
 				INFOPLIST_FILE = VR_MonitoringTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nuenablingengineering.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VR_Monitoring.app/VR_Monitoring";
 			};
@@ -701,6 +687,7 @@
 				);
 				INFOPLIST_FILE = VR_MonitoringTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nuenablingengineering.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VR_Monitoring.app/VR_Monitoring";
 			};

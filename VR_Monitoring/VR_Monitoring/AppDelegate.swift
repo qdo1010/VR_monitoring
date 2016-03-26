@@ -39,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //UIBarButtonItem.appearance().tintColor = UIColor.whiteColor()
         /*UIApplication.sharedApplication().statusBarHidden = false
         UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent*/
-        var addStatusBar = UIView()
+        let addStatusBar = UIView()
         self.window?.rootViewController?.view .addSubview(addStatusBar)
         
         

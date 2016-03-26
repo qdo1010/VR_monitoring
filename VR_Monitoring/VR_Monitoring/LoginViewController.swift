@@ -28,10 +28,10 @@ class LoginViewController: UIViewController {
             withCompletionBlock: { error, authData in
                 if error != nil {
                     // There was an error logging in to this account
-                    println("error logging in");
+                    print("error logging in");
                 } else {
                     // We are now logged in
-                    println("log in success!")
+                    print("log in success!")
                     
                 }
         })
@@ -50,8 +50,8 @@ class LoginViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var SavedViewController: passwordSavedViewController = segue.destinationViewController as! passwordSavedViewController
-        SavedViewController.userName = usernameTextField.text
+        let SavedViewController: passwordSavedViewController = segue.destinationViewController as! passwordSavedViewController
+        SavedViewController.userName = usernameTextField.text!
         
     }
     
