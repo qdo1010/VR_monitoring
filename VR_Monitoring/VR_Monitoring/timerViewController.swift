@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 import CoreBluetooth
-import ResearchKit
+//mport ResearchKit
 
 class timerViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDelegate {
 
@@ -45,16 +45,20 @@ class timerViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
                 timer.invalidate()
                 var currentTime = timeLabel.text!
                 var ref = Firebase(url: "https://amber-inferno-7571.firebaseio.com/")
-                var husky = ["user_name": "Husky", "time": currentTime]
+                var name = exerciseTitle
+                let date = NSDate()
+                let calendar = NSCalendar.currentCalendar()
+                let components = calendar.components(.CalendarUnitDay | .CalendarUnitMonth | .CalendarUnitYear, fromDate: date)
                 
-                var usersRef = ref.childByAppendingPath("users")
+                let year =  components.year
+                let month = components.month
+                let day = components.day
+                let today = month.description + "/" + day.description + "/" + year.description
+                let duration = timeLabel
                 
-                var users = ["husky": husky]
-                usersRef.setValue(users)
-                startButton.setTitle("Start", forState: .Normal)
-                let taskViewController = ORKTaskViewController(task: SurveyTask, taskRunUUID: nil)
+                /*let taskViewController = ORKTaskViewController(task: SurveyTask, taskRunUUID: nil)
                 taskViewController.delegate = self
-                presentViewController(taskViewController, animated: true, completion: nil)
+                presentViewController(taskViewController, animated: true, completion: nil)*/
 
             }
         }
@@ -349,7 +353,7 @@ class timerViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
 
     
 }
-
+/*
 extension timerViewController : ORKTaskViewControllerDelegate {
     
     func taskViewController(taskViewController: ORKTaskViewController, didFinishWithReason reason: ORKTaskViewControllerFinishReason, error: NSError?) {
@@ -357,4 +361,4 @@ extension timerViewController : ORKTaskViewControllerDelegate {
         taskViewController.dismissViewControllerAnimated(true, completion: nil)
     }
     
-}
+}*/

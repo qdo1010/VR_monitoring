@@ -7,19 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10AC00DE8E3F9AE8E47F6AA8 /* Pods_VR_Monitoring.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0847791B12BCD63F5CB1ABB3 /* Pods_VR_Monitoring.framework */; };
-		7B4815611C990492008FF30A /* Running Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4815601C990492008FF30A /* Running Filled-50.png */; };
-		7B4815651C990517008FF30A /* Running Filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4815641C990517008FF30A /* Running Filled-25.png */; };
+		7B426CDB1CB018FB0005C1BC /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B426CD81CB018F10005C1BC /* ResearchKit.framework */; };
+		7B426CDC1CB018FB0005C1BC /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7B426CD81CB018F10005C1BC /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7B426CE01CB0191B0005C1BC /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B426CDF1CB0191B0005C1BC /* Firebase.framework */; };
 		7B4815671C990544008FF30A /* Running Filled-35.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4815661C990544008FF30A /* Running Filled-35.png */; };
-		7B4815691C9905D7008FF30A /* Contacts-35.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4815681C9905D7008FF30A /* Contacts-35.png */; };
 		7B48156B1C99062B008FF30A /* Speech Bubble Filled-35.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B48156A1C99062B008FF30A /* Speech Bubble Filled-35.png */; };
 		7B48156E1C99AD96008FF30A /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B48156D1C99AD96008FF30A /* MainTabBar.swift */; };
-		7B4815721C99B28D008FF30A /* Running-35.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4815711C99B28D008FF30A /* Running-35.png */; };
-		7B4815741C99B2B7008FF30A /* Speech Bubble-35.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4815731C99B2B7008FF30A /* Speech Bubble-35.png */; };
 		7B4815761C99B2D7008FF30A /* Bar Chart Filled-35.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4815751C99B2D7008FF30A /* Bar Chart Filled-35.png */; };
 		7B4815781C99B4D5008FF30A /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4815771C99B4D5008FF30A /* ProgressViewController.swift */; };
 		7B48157A1C99B563008FF30A /* MessagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4815791C99B563008FF30A /* MessagingViewController.swift */; };
-		7B48157C1C99C556008FF30A /* bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B48157B1C99C556008FF30A /* bg2.png */; };
+		7B4E088E1CAF57BF00BC9794 /* bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4E088D1CAF57BF00BC9794 /* bg2.png */; };
 		7B5447B21C190DE2008603D4 /* passwordSavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5447B11C190DE2008603D4 /* passwordSavedViewController.swift */; };
 		7B5447B41C191940008603D4 /* exercisesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5447B31C191940008603D4 /* exercisesViewController.swift */; };
 		7B5447B61C191991008603D4 /* exercisesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5447B51C191991008603D4 /* exercisesTableView.swift */; };
@@ -43,27 +40,31 @@
 		7BD291EC1BEE6001006BB075 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD291EB1BEE6001006BB075 /* StoreKit.framework */; };
 		7BD291EE1BEE600E006BB075 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD291ED1BEE600E006BB075 /* SystemConfiguration.framework */; };
 		7BD291F01BEE601F006BB075 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD291EF1BEE601F006BB075 /* libsqlite3.dylib */; };
-		7BD292011BEE6063006BB075 /* Parse-VR.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD292001BEE6063006BB075 /* Parse-VR.m */; };
 		7BD292031BF92243006BB075 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD292021BF92243006BB075 /* LoginViewController.swift */; };
-		7BE73A1B1C8226CB00F7A80C /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2C5C6A1C80FDAC00143D29 /* ResearchKit.framework */; };
-		7BE73A1C1C8226CB00F7A80C /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2C5C6A1C80FDAC00143D29 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7BE73A211C8227AA00F7A80C /* SurveyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE73A201C8227AA00F7A80C /* SurveyTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7B2C5C691C80FDAC00143D29 /* PBXContainerItemProxy */ = {
+		7B426CD71CB018F10005C1BC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7B2C5C631C80FDAC00143D29 /* ResearchKit.xcodeproj */;
+			containerPortal = 7B426CD11CB018F10005C1BC /* ResearchKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = B183A5951A8535D100C76870;
 			remoteInfo = ResearchKit;
 		};
-		7B2C5C6B1C80FDAC00143D29 /* PBXContainerItemProxy */ = {
+		7B426CD91CB018F10005C1BC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7B2C5C631C80FDAC00143D29 /* ResearchKit.xcodeproj */;
+			containerPortal = 7B426CD11CB018F10005C1BC /* ResearchKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
 			remoteInfo = ResearchKitTests;
+		};
+		7B426CDD1CB018FB0005C1BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B426CD11CB018F10005C1BC /* ResearchKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B183A4731A8535D100C76870;
+			remoteInfo = ResearchKit;
 		};
 		7BD291CC1BEE5F0F006BB075 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -72,23 +73,16 @@
 			remoteGlobalIDString = 7BD291B51BEE5F0F006BB075;
 			remoteInfo = VR_Monitoring;
 		};
-		7BE73A1D1C8226CB00F7A80C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7B2C5C631C80FDAC00143D29 /* ResearchKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = B183A4731A8535D100C76870;
-			remoteInfo = ResearchKit;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		7BE73A1F1C8226CB00F7A80C /* Embed Frameworks */ = {
+		7B426CC11CB016B30005C1BC /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7BE73A1C1C8226CB00F7A80C /* ResearchKit.framework in Embed Frameworks */,
+				7B426CDC1CB018FB0005C1BC /* ResearchKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,19 +93,16 @@
 		0847791B12BCD63F5CB1ABB3 /* Pods_VR_Monitoring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VR_Monitoring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		091E96F26D5B009629D2B64A /* Pods-VR_Monitoring.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VR_Monitoring.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VR_Monitoring/Pods-VR_Monitoring.debug.xcconfig"; sourceTree = "<group>"; };
 		4B901D69C8EFDC59B6932D08 /* Pods-VR_Monitoring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VR_Monitoring.release.xcconfig"; path = "Pods/Target Support Files/Pods-VR_Monitoring/Pods-VR_Monitoring.release.xcconfig"; sourceTree = "<group>"; };
-		7B2C5C631C80FDAC00143D29 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ../ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
-		7B4815601C990492008FF30A /* Running Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Running Filled-50.png"; path = "../../../../../Downloads/Running Filled-50.png"; sourceTree = "<group>"; };
-		7B4815641C990517008FF30A /* Running Filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Running Filled-25.png"; path = "../../../../../Downloads/Running Filled-25.png"; sourceTree = "<group>"; };
+		7B426CD11CB018F10005C1BC /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ../ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
+		7B426CDF1CB0191B0005C1BC /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = "Pods/../build/Debug-iphoneos/Firebase.framework"; sourceTree = "<group>"; };
 		7B4815661C990544008FF30A /* Running Filled-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Running Filled-35.png"; path = "../../../../../Downloads/Running Filled-35.png"; sourceTree = "<group>"; };
-		7B4815681C9905D7008FF30A /* Contacts-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Contacts-35.png"; path = "../../../../../Downloads/Contacts-35.png"; sourceTree = "<group>"; };
 		7B48156A1C99062B008FF30A /* Speech Bubble Filled-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Speech Bubble Filled-35.png"; path = "../../../../../Downloads/Speech Bubble Filled-35.png"; sourceTree = "<group>"; };
 		7B48156D1C99AD96008FF30A /* MainTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
-		7B4815711C99B28D008FF30A /* Running-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Running-35.png"; path = "../../../../../Downloads/Running-35.png"; sourceTree = "<group>"; };
-		7B4815731C99B2B7008FF30A /* Speech Bubble-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Speech Bubble-35.png"; path = "../../../../../Downloads/Speech Bubble-35.png"; sourceTree = "<group>"; };
 		7B4815751C99B2D7008FF30A /* Bar Chart Filled-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Bar Chart Filled-35.png"; path = "../../../../../Downloads/Bar Chart Filled-35.png"; sourceTree = "<group>"; };
 		7B4815771C99B4D5008FF30A /* ProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		7B4815791C99B563008FF30A /* MessagingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagingViewController.swift; sourceTree = "<group>"; };
-		7B48157B1C99C556008FF30A /* bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg2.png; path = "../../../../../Downloads/5-colorful-backgrounds/PNG/bg2.png"; sourceTree = "<group>"; };
+		7B4E088D1CAF57BF00BC9794 /* bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg2.png; path = ../../../../../Downloads/bg2.png; sourceTree = "<group>"; };
+		7B4E09611CAF646C00BC9794 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = "Pods/../build/Debug-iphoneos/Firebase.framework"; sourceTree = "<group>"; };
 		7B5447B11C190DE2008603D4 /* passwordSavedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = passwordSavedViewController.swift; sourceTree = "<group>"; };
 		7B5447B31C191940008603D4 /* exercisesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exercisesViewController.swift; sourceTree = "<group>"; };
 		7B5447B51C191991008603D4 /* exercisesTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exercisesTableView.swift; sourceTree = "<group>"; };
@@ -140,7 +131,6 @@
 		7BD291ED1BEE600E006BB075 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7BD291EF1BEE601F006BB075 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		7BD291FF1BEE6062006BB075 /* VR_Monitoring-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VR_Monitoring-Bridging-Header.h"; sourceTree = "<group>"; };
-		7BD292001BEE6063006BB075 /* Parse-VR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Parse-VR.m"; sourceTree = "<group>"; };
 		7BD292021BF92243006BB075 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7BE73A201C8227AA00F7A80C /* SurveyTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,20 +140,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B426CE01CB0191B0005C1BC /* Firebase.framework in Frameworks */,
 				7B602F0F1C4ADBCC003D3E52 /* CoreBluetooth.framework in Frameworks */,
 				7BD291F01BEE601F006BB075 /* libsqlite3.dylib in Frameworks */,
 				7BD291EE1BEE600E006BB075 /* SystemConfiguration.framework in Frameworks */,
 				7BD291EC1BEE6001006BB075 /* StoreKit.framework in Frameworks */,
 				7BD291EA1BEE5FFA006BB075 /* Security.framework in Frameworks */,
 				7BD291E81BEE5FCA006BB075 /* QuartzCore.framework in Frameworks */,
+				7B426CDB1CB018FB0005C1BC /* ResearchKit.framework in Frameworks */,
 				7BD291E61BEE5FC2006BB075 /* MobileCoreServices.framework in Frameworks */,
 				7BD291E41BEE5FBB006BB075 /* libz.dylib in Frameworks */,
 				7BD291E21BEE5FB2006BB075 /* CoreLocation.framework in Frameworks */,
 				7BD291E01BEE5FAD006BB075 /* CoreGraphics.framework in Frameworks */,
 				7BD291DE1BEE5FA6006BB075 /* CFNetwork.framework in Frameworks */,
 				7BD291DC1BEE5F4F006BB075 /* AudioToolbox.framework in Frameworks */,
-				7BE73A1B1C8226CB00F7A80C /* ResearchKit.framework in Frameworks */,
-				10AC00DE8E3F9AE8E47F6AA8 /* Pods_VR_Monitoring.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +170,8 @@
 		2366D288E47474BA8300A1F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7B426CDF1CB0191B0005C1BC /* Firebase.framework */,
+				7B4E09611CAF646C00BC9794 /* Firebase.framework */,
 				0847791B12BCD63F5CB1ABB3 /* Pods_VR_Monitoring.framework */,
 			);
 			name = Frameworks;
@@ -194,11 +186,11 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		7B2C5C641C80FDAC00143D29 /* Products */ = {
+		7B426CD21CB018F10005C1BC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7B2C5C6A1C80FDAC00143D29 /* ResearchKit.framework */,
-				7B2C5C6C1C80FDAC00143D29 /* ResearchKitTests.xctest */,
+				7B426CD81CB018F10005C1BC /* ResearchKit.framework */,
+				7B426CDA1CB018F10005C1BC /* ResearchKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -206,9 +198,8 @@
 		7BD291AD1BEE5F0F006BB075 = {
 			isa = PBXGroup;
 			children = (
-				7B2C5C631C80FDAC00143D29 /* ResearchKit.xcodeproj */,
+				7B426CD11CB018F10005C1BC /* ResearchKit.xcodeproj */,
 				7B602F0E1C4ADBCC003D3E52 /* CoreBluetooth.framework */,
-				7BD292001BEE6063006BB075 /* Parse-VR.m */,
 				7BD291EF1BEE601F006BB075 /* libsqlite3.dylib */,
 				7BD291ED1BEE600E006BB075 /* SystemConfiguration.framework */,
 				7BD291EB1BEE6001006BB075 /* StoreKit.framework */,
@@ -250,7 +241,6 @@
 				7B5447B91C192F07008603D4 /* timerViewController.swift */,
 				7B5447B31C191940008603D4 /* exercisesViewController.swift */,
 				7B5447B51C191991008603D4 /* exercisesTableView.swift */,
-				7B4815681C9905D7008FF30A /* Contacts-35.png */,
 				7B5447B71C1919AD008603D4 /* exerciseTableViewCell.swift */,
 				7BD291C21BEE5F0F006BB075 /* Images.xcassets */,
 				7BD291C41BEE5F0F006BB075 /* LaunchScreen.xib */,
@@ -265,14 +255,10 @@
 		7BD291B91BEE5F0F006BB075 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7B4815601C990492008FF30A /* Running Filled-50.png */,
-				7B4815711C99B28D008FF30A /* Running-35.png */,
-				7B48157B1C99C556008FF30A /* bg2.png */,
+				7B4E088D1CAF57BF00BC9794 /* bg2.png */,
 				7B4815661C990544008FF30A /* Running Filled-35.png */,
-				7B4815731C99B2B7008FF30A /* Speech Bubble-35.png */,
 				7B4815751C99B2D7008FF30A /* Bar Chart Filled-35.png */,
 				7B48156A1C99062B008FF30A /* Speech Bubble Filled-35.png */,
-				7B4815641C990517008FF30A /* Running Filled-25.png */,
 				7BD291BA1BEE5F0F006BB075 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -308,12 +294,12 @@
 				7BD291B41BEE5F0F006BB075 /* Resources */,
 				52961329B577A16E893D61A0 /* Embed Pods Frameworks */,
 				B0878AC959D5F226B161A150 /* Copy Pods Resources */,
-				7BE73A1F1C8226CB00F7A80C /* Embed Frameworks */,
+				7B426CC11CB016B30005C1BC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7BE73A1E1C8226CB00F7A80C /* PBXTargetDependency */,
+				7B426CDE1CB018FB0005C1BC /* PBXTargetDependency */,
 			);
 			name = VR_Monitoring;
 			productName = VR_Monitoring;
@@ -370,8 +356,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 7B2C5C641C80FDAC00143D29 /* Products */;
-					ProjectRef = 7B2C5C631C80FDAC00143D29 /* ResearchKit.xcodeproj */;
+					ProductGroup = 7B426CD21CB018F10005C1BC /* Products */;
+					ProjectRef = 7B426CD11CB018F10005C1BC /* ResearchKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -383,18 +369,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		7B2C5C6A1C80FDAC00143D29 /* ResearchKit.framework */ = {
+		7B426CD81CB018F10005C1BC /* ResearchKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = ResearchKit.framework;
-			remoteRef = 7B2C5C691C80FDAC00143D29 /* PBXContainerItemProxy */;
+			remoteRef = 7B426CD71CB018F10005C1BC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		7B2C5C6C1C80FDAC00143D29 /* ResearchKitTests.xctest */ = {
+		7B426CDA1CB018F10005C1BC /* ResearchKitTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ResearchKitTests.xctest;
-			remoteRef = 7B2C5C6B1C80FDAC00143D29 /* PBXContainerItemProxy */;
+			remoteRef = 7B426CD91CB018F10005C1BC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -404,17 +390,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B4815691C9905D7008FF30A /* Contacts-35.png in Resources */,
 				7B4815671C990544008FF30A /* Running Filled-35.png in Resources */,
-				7B4815741C99B2B7008FF30A /* Speech Bubble-35.png in Resources */,
 				7BD291C11BEE5F0F006BB075 /* Main.storyboard in Resources */,
 				7BD291C61BEE5F0F006BB075 /* LaunchScreen.xib in Resources */,
-				7B4815651C990517008FF30A /* Running Filled-25.png in Resources */,
 				7B4815761C99B2D7008FF30A /* Bar Chart Filled-35.png in Resources */,
-				7B4815721C99B28D008FF30A /* Running-35.png in Resources */,
 				7BD291C31BEE5F0F006BB075 /* Images.xcassets in Resources */,
-				7B48157C1C99C556008FF30A /* bg2.png in Resources */,
-				7B4815611C990492008FF30A /* Running Filled-50.png in Resources */,
+				7B4E088E1CAF57BF00BC9794 /* bg2.png in Resources */,
 				7B48156B1C99062B008FF30A /* Speech Bubble Filled-35.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,7 +469,6 @@
 				7B4815781C99B4D5008FF30A /* ProgressViewController.swift in Sources */,
 				7BD291BE1BEE5F0F006BB075 /* ViewController.swift in Sources */,
 				7B48156E1C99AD96008FF30A /* MainTabBar.swift in Sources */,
-				7BD292011BEE6063006BB075 /* Parse-VR.m in Sources */,
 				7B5447B21C190DE2008603D4 /* passwordSavedViewController.swift in Sources */,
 				7BE73A211C8227AA00F7A80C /* SurveyTask.swift in Sources */,
 				7B5447B61C191991008603D4 /* exercisesTableView.swift in Sources */,
@@ -508,15 +488,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7B426CDE1CB018FB0005C1BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ResearchKit;
+			targetProxy = 7B426CDD1CB018FB0005C1BC /* PBXContainerItemProxy */;
+		};
 		7BD291CD1BEE5F0F006BB075 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7BD291B51BEE5F0F006BB075 /* VR_Monitoring */;
 			targetProxy = 7BD291CC1BEE5F0F006BB075 /* PBXContainerItemProxy */;
-		};
-		7BE73A1E1C8226CB00F7A80C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ResearchKit;
-			targetProxy = 7BE73A1D1C8226CB00F7A80C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -635,6 +615,7 @@
 					"$(inherited)",
 					"/Users/saradasymonds/Downloads/parse-library-1.9.1",
 					/Users/saradasymonds/Documents/Projects/VR_monitoring/VR_Monitoring/Pods/Firebase,
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = VR_Monitoring/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -659,6 +640,7 @@
 					"$(inherited)",
 					"/Users/saradasymonds/Downloads/parse-library-1.9.1",
 					/Users/saradasymonds/Documents/Projects/VR_monitoring/VR_Monitoring/Pods/Firebase,
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = VR_Monitoring/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
