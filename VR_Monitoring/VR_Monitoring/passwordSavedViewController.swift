@@ -44,7 +44,6 @@ class passwordSavedViewController: UIViewController {
         let barViewControllers = self.tabBarController?.viewControllers
         let exer = barViewControllers![0] as! exercisesViewController
         exer.userName = userName*/
-        
     }
     
     

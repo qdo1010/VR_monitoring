@@ -23,6 +23,7 @@ class LoginViewController: UIViewController {
         //have to regenerate and set new password everytime
         self.performSegueWithIdentifier("loginSuccessful", sender: self);
         let userEmail = usernameTextField.text
+        GlobalVariables.sharedManager.ID = userEmail!;
         let userPassword = passwordTextField.text
         ref.authUser(userEmail, password: userPassword,
             withCompletionBlock: { error, authData in

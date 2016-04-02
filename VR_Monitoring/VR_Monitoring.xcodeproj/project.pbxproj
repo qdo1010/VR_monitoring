@@ -43,6 +43,7 @@
 		979EA3C31C9DC7EC000257EF /* bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 979EA3BF1C9DC7EC000257EF /* bg2.png */; };
 		979EA3C41C9DC7EC000257EF /* Running-35.png in Resources */ = {isa = PBXBuildFile; fileRef = 979EA3C01C9DC7EC000257EF /* Running-35.png */; };
 		979EA3C51C9DC7EC000257EF /* Speech Bubble-35.png in Resources */ = {isa = PBXBuildFile; fileRef = 979EA3C11C9DC7EC000257EF /* Speech Bubble-35.png */; };
+		97CE90F21CB051AA0007D9F5 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CE90F11CB051AA0007D9F5 /* GlobalVariables.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +134,7 @@
 		979EA3BF1C9DC7EC000257EF /* bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg2.png; path = ../../bg2.png; sourceTree = "<group>"; };
 		979EA3C01C9DC7EC000257EF /* Running-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Running-35.png"; path = "../../Running-35.png"; sourceTree = "<group>"; };
 		979EA3C11C9DC7EC000257EF /* Speech Bubble-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Speech Bubble-35.png"; path = "../../Speech Bubble-35.png"; sourceTree = "<group>"; };
+		97CE90F11CB051AA0007D9F5 /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +224,7 @@
 		7BD291B81BEE5F0F006BB075 /* VR_Monitoring */ = {
 			isa = PBXGroup;
 			children = (
+				97CE90F11CB051AA0007D9F5 /* GlobalVariables.swift */,
 				7BD291BB1BEE5F0F006BB075 /* AppDelegate.swift */,
 				7BD291BD1BEE5F0F006BB075 /* ViewController.swift */,
 				7BD292021BF92243006BB075 /* LoginViewController.swift */,
@@ -467,6 +470,7 @@
 				7BD292031BF92243006BB075 /* LoginViewController.swift in Sources */,
 				7B5447B81C1919AD008603D4 /* exerciseTableViewCell.swift in Sources */,
 				7B48157A1C99B563008FF30A /* MessagingViewController.swift in Sources */,
+				97CE90F21CB051AA0007D9F5 /* GlobalVariables.swift in Sources */,
 				7B4815781C99B4D5008FF30A /* ProgressViewController.swift in Sources */,
 				7BD291BE1BEE5F0F006BB075 /* ViewController.swift in Sources */,
 				7B48156E1C99AD96008FF30A /* MainTabBar.swift in Sources */,
