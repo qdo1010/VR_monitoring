@@ -37,8 +37,11 @@
 		7BD292011BEE6063006BB075 /* Parse-VR.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD292001BEE6063006BB075 /* Parse-VR.m */; };
 		7BD292031BF92243006BB075 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD292021BF92243006BB075 /* LoginViewController.swift */; };
 		7BE73A211C8227AA00F7A80C /* SurveyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE73A201C8227AA00F7A80C /* SurveyTask.swift */; };
-		979EA3BA1C9DC66A000257EF /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9768C90E1C9B949A002487D5 /* ResearchKit.framework */; };
-		979EA3BB1C9DC66A000257EF /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9768C90E1C9B949A002487D5 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9727072D1CB41EB7001583C8 /* PKHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9727072C1CB41EAA001583C8 /* PKHUD.framework */; };
+		9727072E1CB41EB7001583C8 /* PKHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9727072C1CB41EAA001583C8 /* PKHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		972707311CB41EBB001583C8 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9727070F1CB41E80001583C8 /* ResearchKit.framework */; };
+		972707321CB41EBB001583C8 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9727070F1CB41E80001583C8 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		972707361CB41EC6001583C8 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972707351CB41EC6001583C8 /* Firebase.framework */; };
 		979EA3C21C9DC7EC000257EF /* Bar Chart Filled-35.png in Resources */ = {isa = PBXBuildFile; fileRef = 979EA3BE1C9DC7EC000257EF /* Bar Chart Filled-35.png */; };
 		979EA3C31C9DC7EC000257EF /* bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 979EA3BF1C9DC7EC000257EF /* bg2.png */; };
 		979EA3C41C9DC7EC000257EF /* Running-35.png in Resources */ = {isa = PBXBuildFile; fileRef = 979EA3C01C9DC7EC000257EF /* Running-35.png */; };
@@ -54,23 +57,44 @@
 			remoteGlobalIDString = 7BD291B51BEE5F0F006BB075;
 			remoteInfo = VR_Monitoring;
 		};
-		9768C90D1C9B949A002487D5 /* PBXContainerItemProxy */ = {
+		9727070E1CB41E80001583C8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9768C9071C9B949A002487D5 /* ResearchKit.xcodeproj */;
+			containerPortal = 972707081CB41E80001583C8 /* ResearchKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = B183A5951A8535D100C76870;
 			remoteInfo = ResearchKit;
 		};
-		9768C90F1C9B949A002487D5 /* PBXContainerItemProxy */ = {
+		972707101CB41E80001583C8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9768C9071C9B949A002487D5 /* ResearchKit.xcodeproj */;
+			containerPortal = 972707081CB41E80001583C8 /* ResearchKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
 			remoteInfo = ResearchKitTests;
 		};
-		979EA3BC1C9DC66A000257EF /* PBXContainerItemProxy */ = {
+		972707291CB41EAA001583C8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9768C9071C9B949A002487D5 /* ResearchKit.xcodeproj */;
+			containerPortal = 972707241CB41EA9001583C8 /* PKHUD.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F99631FC19514FAC001F73CA;
+			remoteInfo = "PKHUD Demo";
+		};
+		9727072B1CB41EAA001583C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 972707241CB41EA9001583C8 /* PKHUD.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F996321E19514FD8001F73CA;
+			remoteInfo = PKHUD;
+		};
+		9727072F1CB41EB7001583C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 972707241CB41EA9001583C8 /* PKHUD.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F996321D19514FD8001F73CA;
+			remoteInfo = PKHUD;
+		};
+		972707331CB41EBB001583C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 972707081CB41E80001583C8 /* ResearchKit.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = B183A4731A8535D100C76870;
 			remoteInfo = ResearchKit;
@@ -84,7 +108,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				979EA3BB1C9DC66A000257EF /* ResearchKit.framework in Embed Frameworks */,
+				972707321CB41EBB001583C8 /* ResearchKit.framework in Embed Frameworks */,
+				9727072E1CB41EB7001583C8 /* PKHUD.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,7 +154,9 @@
 		7BD292001BEE6063006BB075 /* Parse-VR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Parse-VR.m"; sourceTree = "<group>"; };
 		7BD292021BF92243006BB075 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7BE73A201C8227AA00F7A80C /* SurveyTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyTask.swift; sourceTree = "<group>"; };
-		9768C9071C9B949A002487D5 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ../ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
+		972707081CB41E80001583C8 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ../ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
+		972707241CB41EA9001583C8 /* PKHUD.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PKHUD.xcodeproj; path = ../PKHUD/PKHUD.xcodeproj; sourceTree = "<group>"; };
+		972707351CB41EC6001583C8 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = "Pods/../build/Debug-iphoneos/Firebase.framework"; sourceTree = "<group>"; };
 		979EA3BE1C9DC7EC000257EF /* Bar Chart Filled-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Bar Chart Filled-35.png"; path = "../../Bar Chart Filled-35.png"; sourceTree = "<group>"; };
 		979EA3BF1C9DC7EC000257EF /* bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg2.png; path = ../../bg2.png; sourceTree = "<group>"; };
 		979EA3C01C9DC7EC000257EF /* Running-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Running-35.png"; path = "../../Running-35.png"; sourceTree = "<group>"; };
@@ -142,6 +169,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				972707361CB41EC6001583C8 /* Firebase.framework in Frameworks */,
 				7B602F0F1C4ADBCC003D3E52 /* CoreBluetooth.framework in Frameworks */,
 				7BD291F01BEE601F006BB075 /* libsqlite3.dylib in Frameworks */,
 				7BD291EE1BEE600E006BB075 /* SystemConfiguration.framework in Frameworks */,
@@ -154,8 +182,9 @@
 				7BD291E01BEE5FAD006BB075 /* CoreGraphics.framework in Frameworks */,
 				7BD291DE1BEE5FA6006BB075 /* CFNetwork.framework in Frameworks */,
 				7BD291DC1BEE5F4F006BB075 /* AudioToolbox.framework in Frameworks */,
-				979EA3BA1C9DC66A000257EF /* ResearchKit.framework in Frameworks */,
 				10AC00DE8E3F9AE8E47F6AA8 /* Pods_VR_Monitoring.framework in Frameworks */,
+				9727072D1CB41EB7001583C8 /* PKHUD.framework in Frameworks */,
+				972707311CB41EBB001583C8 /* ResearchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +201,7 @@
 		2366D288E47474BA8300A1F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				972707351CB41EC6001583C8 /* Firebase.framework */,
 				0847791B12BCD63F5CB1ABB3 /* Pods_VR_Monitoring.framework */,
 			);
 			name = Frameworks;
@@ -189,7 +219,8 @@
 		7BD291AD1BEE5F0F006BB075 = {
 			isa = PBXGroup;
 			children = (
-				9768C9071C9B949A002487D5 /* ResearchKit.xcodeproj */,
+				972707241CB41EA9001583C8 /* PKHUD.xcodeproj */,
+				972707081CB41E80001583C8 /* ResearchKit.xcodeproj */,
 				7B602F0E1C4ADBCC003D3E52 /* CoreBluetooth.framework */,
 				7BD292001BEE6063006BB075 /* Parse-VR.m */,
 				7BD291EF1BEE601F006BB075 /* libsqlite3.dylib */,
@@ -274,11 +305,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9768C9081C9B949A002487D5 /* Products */ = {
+		972707091CB41E80001583C8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9768C90E1C9B949A002487D5 /* ResearchKit.framework */,
-				9768C9101C9B949A002487D5 /* ResearchKitTests.xctest */,
+				9727070F1CB41E80001583C8 /* ResearchKit.framework */,
+				972707111CB41E80001583C8 /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		972707251CB41EA9001583C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9727072A1CB41EAA001583C8 /* PKHUD Demo.app */,
+				9727072C1CB41EAA001583C8 /* PKHUD.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -301,7 +341,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				979EA3BD1C9DC66A000257EF /* PBXTargetDependency */,
+				972707301CB41EB7001583C8 /* PBXTargetDependency */,
+				972707341CB41EBB001583C8 /* PBXTargetDependency */,
 			);
 			name = VR_Monitoring;
 			productName = VR_Monitoring;
@@ -360,8 +401,12 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 9768C9081C9B949A002487D5 /* Products */;
-					ProjectRef = 9768C9071C9B949A002487D5 /* ResearchKit.xcodeproj */;
+					ProductGroup = 972707251CB41EA9001583C8 /* Products */;
+					ProjectRef = 972707241CB41EA9001583C8 /* PKHUD.xcodeproj */;
+				},
+				{
+					ProductGroup = 972707091CB41E80001583C8 /* Products */;
+					ProjectRef = 972707081CB41E80001583C8 /* ResearchKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -373,18 +418,32 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		9768C90E1C9B949A002487D5 /* ResearchKit.framework */ = {
+		9727070F1CB41E80001583C8 /* ResearchKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = ResearchKit.framework;
-			remoteRef = 9768C90D1C9B949A002487D5 /* PBXContainerItemProxy */;
+			remoteRef = 9727070E1CB41E80001583C8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		9768C9101C9B949A002487D5 /* ResearchKitTests.xctest */ = {
+		972707111CB41E80001583C8 /* ResearchKitTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ResearchKitTests.xctest;
-			remoteRef = 9768C90F1C9B949A002487D5 /* PBXContainerItemProxy */;
+			remoteRef = 972707101CB41E80001583C8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9727072A1CB41EAA001583C8 /* PKHUD Demo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "PKHUD Demo.app";
+			remoteRef = 972707291CB41EAA001583C8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9727072C1CB41EAA001583C8 /* PKHUD.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PKHUD.framework;
+			remoteRef = 9727072B1CB41EAA001583C8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -499,10 +558,15 @@
 			target = 7BD291B51BEE5F0F006BB075 /* VR_Monitoring */;
 			targetProxy = 7BD291CC1BEE5F0F006BB075 /* PBXContainerItemProxy */;
 		};
-		979EA3BD1C9DC66A000257EF /* PBXTargetDependency */ = {
+		972707301CB41EB7001583C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PKHUD;
+			targetProxy = 9727072F1CB41EB7001583C8 /* PBXContainerItemProxy */;
+		};
+		972707341CB41EBB001583C8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ResearchKit;
-			targetProxy = 979EA3BC1C9DC66A000257EF /* PBXContainerItemProxy */;
+			targetProxy = 972707331CB41EBB001583C8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -623,6 +687,7 @@
 					"$(inherited)",
 					"/Users/saradasymonds/Downloads/parse-library-1.9.1",
 					/Users/saradasymonds/Documents/Projects/VR_monitoring/VR_Monitoring/Pods/Firebase,
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = VR_Monitoring/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -649,6 +714,7 @@
 					"$(inherited)",
 					"/Users/saradasymonds/Downloads/parse-library-1.9.1",
 					/Users/saradasymonds/Documents/Projects/VR_monitoring/VR_Monitoring/Pods/Firebase,
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = VR_Monitoring/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

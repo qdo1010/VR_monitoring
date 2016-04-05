@@ -1,5 +1,5 @@
 //
-//  timerViewController.swift
+//  timerViewController.swift/Users/quan199555/Desktop/iTerm.app
 //  VR_Monitoring
 //
 //  Created by Sarada Symonds on 12/9/15.
@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import CoreBluetooth
 import ResearchKit
+import PKHUD
 
 class timerViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDelegate {
 
@@ -309,7 +310,7 @@ class timerViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
     func centralManager(central: CBCentralManager, didDiscoverPeripheral peripheral: CBPeripheral, advertisementData: [String : AnyObject], RSSI: NSNumber) {
         let deviceName = "WHAM"
         let nameOfDeviceFound = peripheral.name
-        
+        HUD.show(.Progress)
         print("Found devices--------------------------", terminator: "")
         print(peripheral, terminator: "")
         print("Name Of Device Found ------------------", terminator: "")
@@ -329,6 +330,7 @@ class timerViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
             self.peripheralDevice = peripheral
             self.peripheralDevice.delegate = self
             self.centralManager.connectPeripheral(peripheral, options: nil)
+            HUD.flash(.Success, delay: 1.0)
         }else{
             sleep(1)
             self.statusLabel?.text = "Sensor Tag Not Found"
