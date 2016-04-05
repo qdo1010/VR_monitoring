@@ -12,6 +12,7 @@ class GlobalVariables {
     // These are the properties you can store in your singleton
     var URL: String = "bob"
     var ID: String = "lib"
+    var totalScore: String = ""
     var globalImage:UIImage? = nil
     var removedImage:UIImage? = nil
     var addonImage:UIImage? = nil

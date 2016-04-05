@@ -19,10 +19,11 @@ class timerViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
     @IBOutlet weak var startButton: UIButton!
     var running = false;
     var score = 0;
-    var totalscore = 0;
+    var totalscore = 0.0;
     var numberofdata = 0;
     var temp1 = 0;
     var temp2 = 0;
+    var startstate = 0;
    
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var exerciseTitleLabel: UILabel!
@@ -42,12 +43,13 @@ class timerViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
     }
     var launchBool: Bool = false {
         didSet {
-            if launchBool == true {
+            peripheralDevice.discoverServices(nil);//discover bluetooth device
+            if launchBool == true { //if start
                 startButton.setTitle("Stop", forState: .Normal)
                 let aSelector : Selector = "updateTime"
                 timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: aSelector, userInfo: nil, repeats: true)
                 startTime = NSDate.timeIntervalSinceReferenceDate()
-               
+                startstate = 1
             } else {
                 timer.invalidate()
                 userName = GlobalVariables.sharedManager.ID
@@ -224,7 +226,9 @@ class timerViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
               //  var users = ["husky": husky]
              //   usersRef.setValue(users)
 */
+                startstate = 2
                 startButton.setTitle("Start", forState: .Normal)
+             //   writeString("Stop") //would this work to stop data stream?
                 print("THE USER SCORE IS ")
                 print(totalscore) //this is the FINAL SCORE of HOW THE USER PERFORM IN THE EXERCISE!!!
                 //SEND THIS TO THE DATABASE AND DONE!!!!!
@@ -353,7 +357,7 @@ class timerViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
                // peripheral.discoverCharacteristics(nil, forService: service)
            // }
             if (service.UUID == CBUUID(string: "6e400001-b5a3-f393-e0a9-e50e24dcca9e")){ //uart
-                print("found", terminator: "")
+           //     print("found", terminator: "")
                 uartService = service
                 peripheral.discoverCharacteristics([CBUUID(string: "6e400002-b5a3-f393-e0a9-e50e24dcca9e"), CBUUID(string: "6e400003-b5a3-f393-e0a9-e50e24dcca9e")], forService: uartService!)
                 
@@ -374,22 +378,47 @@ class timerViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
         else {
             let characteristics = service.characteristics as [CBCharacteristic]!
             for characteristic in characteristics {
-                print(characteristic.UUID, terminator: "")
+               // print(characteristic.UUID, terminator: "")
                 switch characteristic.UUID{
                 case CBUUID(string: "6e400002-b5a3-f393-e0a9-e50e24dcca9e"):
                     peripheral.setNotifyValue(true, forCharacteristic: characteristic)
                     txCharacteristic = characteristic //found the txCharacteristic!!!
-                    print("Found TX", terminator: "")
+                  //  print("Found TX", terminator: "")
                 //    var string: NSString
                   //  string = "ko"
-                    print("is this right")
-                    writeString("What")
+                    //print(exerciseTitle)
+                    if ((exerciseTitle == "River Rush") && (startstate != 2)&&(launchBool == true)){
+                       writeString("Game1")
+                        print("ex1")
+                    }
+                    else if ((exerciseTitle == "20,000 Leaks") && (startstate != 2)&&(launchBool == true)){
+                        writeString("Game2")
+                        print("ex2")
+                    }
+                    else if ((exerciseTitle == "Rally Ball") && (startstate != 2)&&(launchBool == true)){
+                        writeString("Game3")
+                        print("ex3")
+                    }
+                    else if ((exerciseTitle == "Reflex Ridge")&&(startstate != 2)&&(launchBool == true)){
+                        writeString("Game4")
+                        print("ex4")
+                    }
+                    else if ((exerciseTitle == "Space Pop") && (startstate != 2)&&(launchBool == true)){
+                        writeString("Game5")
+                        print("ex5")
+                    }
+                    else if (startstate == 2) {
+                     //   print("STOP!!!!!!!!!!!!!!!!")
+                        writeString("Stop")  //TELL ARDUINO TO STOP DOING STUFFS!!!!!!
+                    }
                   //  peripheral.writeValue(data, forCharacteristic: characteristic, type: CBCharacteristicWriteType.WithoutResponse)
-                    print("yes?")
+                   // print("yes?")
                     break
                 case CBUUID(string: "6e400003-b5a3-f393-e0a9-e50e24dcca9e"):
-                    print("found RX too", terminator: "")
+                   // print("found RX too", terminator: "")
+
                     peripheral.setNotifyValue(true, forCharacteristic: characteristic)
+                
                     break
             //    case "2A37":
                     // Set notification on heart rate measurement
@@ -468,9 +497,9 @@ class timerViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
             */
         }
         else {
-            print("didWriteValueForCharacteristic and value ")
-            print(characteristic.UUID)
-            print(characteristic.value)
+          //  print("didWriteValueForCharacteristic and value ")
+        //    print(characteristic.UUID)
+        //    print(characteristic.value)
         }
     
     }
@@ -478,17 +507,13 @@ class timerViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
     
     
     func writeString(string:NSString){
-        if (launchBool == true){
         //Send string to peripheral
-        
         let data = NSData(bytes: string.UTF8String, length: string.length)
         
         writeRawData(data)
+        peripheralDevice.discoverServices(nil);
         }
-        else {
-            peripheralDevice.discoverServices(nil);
-        }
-    }
+    
     
     func writeRawData(data:NSData) {
         
@@ -577,13 +602,15 @@ class timerViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
 //    }
     
     func updateConsoleWithIncomingData(newData:NSData) {
-        
+       
         //Write new received data to the console text view
-        
+        if (startButton.selected == false) {
+            if (startstate != 2) {
         //convert data to string & replace characters we can't display
         let dataLength:Int = newData.length
-       // print("leng of data")
-       // print(dataLength)
+        print("leng of data")
+    print(dataLength)
+        if ((dataLength >= 1) && (dataLength < 15)){
         var data = [UInt8](count: dataLength, repeatedValue: 0)
         newData.getBytes(&data, length: dataLength)
         
@@ -602,25 +629,27 @@ class timerViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
         let newString = NSString(bytes: &data, length: dataLength, encoding: NSUTF8StringEncoding)
         //  printLog(self, funcName: "updateConsoleWithIncomingData", logString: newString! as String)
        // print(newString as! String, terminator: "")
-        let sensor = newString!.componentsSeparatedByString("|")
-        // print(sensor[0])
+   
         
         print(newString)
         //print("new data")
-        if (launchBool == true){
             //assuming sensor[0] contains the score! not sure if it's correct though
-            if (sensor[0] != ""){
-                numberofdata = numberofdata + 1 //increment to get number of data
-                score = Int(sensor[0])! + temp1;  //Get the Sum of all values
-                temp1 = score
-                totalscore = score/numberofdata //Take the average
+            if (newString != nil){
+                let sensor = newString!.componentsSeparatedByString(",")
+                if (sensor[0] != ""){
+                print(sensor[0])
+               // numberofdata = numberofdata + 1 //increment to get number of data
+               // score = Int(sensor[0])!  //Get the Sum of all values
+               // temp1 = score
+              //  totalscore = score/numberofdata //Take the average
               //  print(numberofdata)
-                temp2 = totalscore  //this is just average of all the data values we get
-               // print(sensor[0])
-                
+              //  temp2 = totalscore  //this is just average of all the data values we get
+             //   print(sensor[0])
+               totalscore = Double(sensor[0])! //TOTAL SCORE IS THE FINAL SCORE AFTER THE ENTIRE EXERCISE!!!!!!!!
+                }
                // print(
             }
-        }
+        
         else {//RESET EVERYTHING BACK TO 0!!!!!!
             numberofdata = 0;
             //print("reset")
@@ -629,8 +658,20 @@ class timerViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
             totalscore = 0;
             temp1 = 0;
             temp2 = 0;
+                print("done")
         }
-        totalscore = temp2 //just to be safe, assign it one last time
+            }
+    
+            }
+            
+            else {
+                print("done with the exercise")
+                startstate = 2;
+                    peripheralDevice.discoverServices(nil);
+              //  writeString("Stop")
+                
+            }
+         //just to be safe, assign it one last time
         
         
       //  peripheralDevice.discoverServices(nil)
@@ -640,7 +681,7 @@ class timerViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
         //                let msgString = newString!.stringByReplacingOccurrencesOfString(self.notificationCommandString, withString: "")
         //                self.sendNotification(msgString)
         //            }
-        
+        }
     }
     
     ///////UPDATE HEART RATE
