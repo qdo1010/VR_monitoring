@@ -9,6 +9,7 @@
 import UIKit
 
 class ProgressViewController: UIViewController {
+    @IBOutlet weak var scoreLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         let firstViewController:UIViewController = self
@@ -17,7 +18,7 @@ class ProgressViewController: UIViewController {
         firstViewController.tabBarItem = customTabBarItem
         customTabBarItem.imageInsets.top = 10
         customTabBarItem.imageInsets.bottom = -6
-        
+        scoreLabel.text = GlobalVariables.sharedManager.score
         
         // Do any additional setup after loading the view.
     }

@@ -9,10 +9,10 @@
 import UIKit
 import Firebase
 import CoreBluetooth
-import ResearchKit
-import PKHUD
+//import ResearchKit
+//import PKHUD
 
-class timerViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDelegate {
+class timerViewController: UIViewController {
 
     var userName = String()
     var exerciseTitle = String()
@@ -34,14 +34,17 @@ class timerViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
         exerciseTitleLabel.text = exerciseTitle
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg2.png")!)
         // Initialize central manager on load
-        centralManager = CBCentralManager(delegate: self, queue: nil)
+        //centralManager = CBCentralManager(delegate: self, queue: nil)
         // Do any additional setup after loading the view.
     }
 
     @IBAction func startButton(sender: UIButton) {
-        launchBool = !launchBool
+        //launchBool = !launchBool
+        tabBarController?.selectedIndex = 1;
         
     }
+}
+    /*
     var launchBool: Bool = false {
         didSet {
             peripheralDevice.discoverServices(nil);//discover bluetooth device
@@ -720,10 +723,10 @@ class timerViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
         }
         
     }
-}
+}*/
 
 
-
+/*
 extension timerViewController : ORKTaskViewControllerDelegate {
     
     func taskViewController(taskViewController: ORKTaskViewController, didFinishWithReason reason: ORKTaskViewControllerFinishReason, error: NSError?) {
@@ -732,3 +735,4 @@ extension timerViewController : ORKTaskViewControllerDelegate {
     }
     
 }
+*/

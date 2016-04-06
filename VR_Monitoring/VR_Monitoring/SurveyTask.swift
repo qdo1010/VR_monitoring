@@ -5,7 +5,7 @@
 //  Created by Sarada Symonds on 2/27/16.
 //  Copyright (c) 2016 NU Enabling Engineering. All rights reserved.
 //
-import ResearchKit
+/*import ResearchKit
 
 public var SurveyTask: ORKOrderedTask {
     
@@ -22,3 +22,4 @@ public var SurveyTask: ORKOrderedTask {
     
     return ORKOrderedTask(identifier: "SurveyTask", steps: steps)
 }
+*/

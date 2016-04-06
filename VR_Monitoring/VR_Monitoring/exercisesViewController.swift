@@ -48,14 +48,14 @@ class exercisesViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.performSegueWithIdentifier("toExerciseTimer", sender: self)
     }
-    
+    /*
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let TimerViewController: timerViewController = segue.destinationViewController as! timerViewController
         TimerViewController.userName = userName
         let indexPath = tableView.indexPathForSelectedRow
         TimerViewController.exerciseTitle = exerciseList[indexPath!.row]
         
-    }
+    }*/
     
     /*
     // MARK: - Navigation

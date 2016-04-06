@@ -16,7 +16,7 @@ class GlobalVariables {
     var globalImage:UIImage? = nil
     var removedImage:UIImage? = nil
     var addonImage:UIImage? = nil
-    
+    var score = ""
     // Here is how you would get to it without there being a global collision of variables.
     // , or in other words, it is a globally accessable parameter that is specific to the
     // class.
