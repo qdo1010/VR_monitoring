@@ -13,6 +13,8 @@ import ResearchKit
 import PKHUD
 
 class timerViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDelegate {
+    @IBOutlet var scoreoutout: UILabel!
+    
 
     var userName = String()
     var exerciseTitle = String()
@@ -25,7 +27,8 @@ class timerViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
     var temp1 = 0;
     var temp2 = 0;
     var startstate = 0;
-   
+    var HR = 60;
+    
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var exerciseTitleLabel: UILabel!
     
@@ -40,7 +43,9 @@ class timerViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
 
     @IBAction func startButton(sender: UIButton) {
         launchBool = !launchBool
-        
+        if (startstate == 2){
+        tabBarController?.selectedIndex = 1;
+        }
     }
     var launchBool: Bool = false {
         didSet {
@@ -232,10 +237,20 @@ class timerViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
              //   writeString("Stop") //would this work to stop data stream?
                 print("THE USER SCORE IS ")
                 print(totalscore) //this is the FINAL SCORE of HOW THE USER PERFORM IN THE EXERCISE!!!
+                print("heart rate")
+                print(HR)
+                GlobalVariables.sharedManager.totalScore = totalscore
+                GlobalVariables.sharedManager.hearrate = HR
+                GlobalVariables.sharedManager.timeDuration = duration
                 //SEND THIS TO THE DATABASE AND DONE!!!!!
-                let taskViewController = ORKTaskViewController(task: SurveyTask, taskRunUUID: nil)
+             let taskViewController = ORKTaskViewController(task: SurveyTask, taskRunUUID: nil)
                 taskViewController.delegate = self
                 presentViewController(taskViewController, animated: true, completion: nil)
+        
+             
+                              //  let thirdViewController = self.storyboard!.instantiateViewControllerWithIdentifier("progressView") as UIViewController
+              //  self.presentViewController(thirdViewController, animated: true, completion: nil)
+            
 
             }
         }
@@ -409,8 +424,8 @@ class timerViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
                         writeString("Game5")
                         print("ex5")
                     }
-                    else if (startstate == 2) {
-                     //   print("STOP!!!!!!!!!!!!!!!!")
+                    else {
+                      // print("STOP!!!!!!!!!!!!!!!!")
                         writeString("Stop")  //TELL ARDUINO TO STOP DOING STUFFS!!!!!!
                     }
                   //  peripheral.writeValue(data, forCharacteristic: characteristic, type: CBCharacteristicWriteType.WithoutResponse)
@@ -612,7 +627,7 @@ class timerViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
         let dataLength:Int = newData.length
         print("leng of data")
     print(dataLength)
-        if ((dataLength >= 1) && (dataLength < 15)){
+        if ((dataLength >= 1) && (dataLength < 17)){
         var data = [UInt8](count: dataLength, repeatedValue: 0)
         newData.getBytes(&data, length: dataLength)
         
@@ -638,8 +653,8 @@ class timerViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
             //assuming sensor[0] contains the score! not sure if it's correct though
             if (newString != nil){
                 let sensor = newString!.componentsSeparatedByString(",")
-                if (sensor[0] != ""){
-                print(sensor[0])
+                if ((sensor[1] != "")&&(sensor[0] != "")){
+             //   print(sensor[0])
                // numberofdata = numberofdata + 1 //increment to get number of data
                // score = Int(sensor[0])!  //Get the Sum of all values
                // temp1 = score
@@ -648,6 +663,8 @@ class timerViewController: UIViewController, CBCentralManagerDelegate, CBPeriphe
               //  temp2 = totalscore  //this is just average of all the data values we get
              //   print(sensor[0])
                totalscore = Double(sensor[0])! //TOTAL SCORE IS THE FINAL SCORE AFTER THE ENTIRE EXERCISE!!!!!!!!
+                    scoreoutout.text = sensor[0]
+                HR = Int(sensor[1])!
                 }
                // print(
             }
