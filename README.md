@@ -25,11 +25,11 @@ PROGRESS TO DATE:
 
 6) Phone can connect to Firebase database to retreive and upload user data  
 
-WHAT NEED TO BE DONE:
+WHAT NEEDS TO BE DONE:
 
-1) Display Score + Timestamp on the App 
+1) Finalize the Charts sections of the app. Based on Charts-iOS pod
 
-2) Integrate Research Kit to send user's response to Database
+2) Create motivational messages for patients
 
 Push to Git:
 
